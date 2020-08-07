@@ -1,0 +1,93 @@
+{
+  "id": "",
+  "version": 8,
+  "name": "xyz raster sources",
+  "sources": {
+    "openstreetmap": {
+      "attribution": "openstreetmap",
+      "type": "raster",
+      "tiles": [
+        "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+      ]
+    },
+    "tileservice-charts-noaa-gov": {
+      "attribution": "NOAA",
+      "type": "raster",
+      "tiles": [
+        "https://tileservice.charts.noaa.gov/tiles/50000_1/{z}/{x}/{y}.png"
+      ]
+    },
+    "statmen-watercolor": {
+      "attribution": "© Stamen Design",
+      "type": "raster",
+      "tiles": [
+        "https://stamen-tiles.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg"
+      ]
+    },
+    "statmen-terrain": {
+      "attribution": "© Stamen Design",
+      "type": "raster",
+      "tiles": [
+        "https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg"
+      ]
+    },
+    "statmen-toner": {
+      "attribution": "© Stamen Design",
+      "type": "raster",
+      "tiles": [
+        "https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png"
+      ]
+    }
+  },
+  "glyphs": "http://example.com/fonts/{fontstack}/{range}.pbf",
+  "sprite": "",
+  "layers": [
+  {
+    "id": "background",
+    "type": "background",
+    "paint": {
+      "background-color": "#ffffff"
+    }
+  },
+  {
+    "id": "openstreetmap",
+    "source": "openstreetmap",
+    "type": "raster",
+    "layout": {
+      "visibility": "visible"
+    }
+  },
+  {
+    "id": "tileservice-charts-noaa-gov",
+    "source": "tileservice-charts-noaa-gov",
+    "type": "raster",
+    "layout": {
+      "visibility": "visible"
+    }
+  },
+  {
+    "id": "statmen-watercolor",
+    "source": "statmen-watercolor",
+    "type": "raster",
+    "layout": {
+      "visibility": "visible"
+    }
+  },
+  {
+    "id": "statmen-terrain",
+    "source": "statmen-terrain",
+    "type": "raster",
+    "layout": {
+      "visibility": "visible"
+    }
+  },
+  {
+    "id": "statmen-toner",
+    "source": "statmen-toner",
+    "type": "raster",
+    "layout": {
+      "visibility": "visible"
+    }
+  }
+]
+}

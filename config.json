@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "version": "tested with tileserver-gl v3.0.0",
+    "docker": "docker pull klokantech/tileserver-gl",
+    "description": "Tileserver GL (TSGL) test config for xyz tiles",
+    "docs": "https://tileserver.readthedocs.io/",
+    "url": "https://hub.docker.com/r/klokantech/tileserver-gl"
+  },
+  "options": {
+    "frontPage": true,
+    "paths": {
+      "root": "/data",
+      "fonts": "/data",
+      "styles": "/data",
+      "mbtiles": "/data"
+    }
+  },
+  "styles": {
+    "xyz-raster-tiles": {
+      "style": "style.json",
+      "tilejson": {
+        "attribution": "This is the Attribution set in tilejson",
+        "bounds": [-180, -85.0511, 180, 85.0511],
+        "center": [-117.1791, 32.7164, 10],
+        "description": "This is the description set in tilejson",
+        "version": "1.0.0"
+      }
+    }
+  }
+}
