@@ -4,7 +4,7 @@ A collection of `xyz` raster tiles for use in maps built for QGIS and Mapbox Sty
 
 
 | Service Name | `xyz`    | Usage Notes |
-| :------------- | :------------- | |
+| :------------- | :------------- | :------------- |
 | `openstreetmap` <br> ![](https://tile.openstreetmap.org/9/89/206.png) | `https://tile.openstreetmap.org/{z}/{x}/{y}.png` | [tile usage policy](https://operations.osmfoundation.org/policies/tiles/) |
 | `tileservice-charts-noaa-gov`   <br> ![](https://tileservice.charts.noaa.gov/tiles/50000_1/9/89/206.png)   | `https://tileservice.charts.noaa.gov/tiles/50000_1/{z}/{x}/{y}.png`     | [Legal Disclaimer](https://tileservice.charts.noaa.gov/tileset.html) |
 | `mapbox-satellite-v9`   <br> ![](https://api.mapbox.com/styles/v1/mapbox/satellite-v9/tiles/256/9/89/206?access_token=pk.eyJ1Ijoicm9ibGFicyIsImEiOiJwVlg0cnZnIn0.yhekddtKwZohGoORaWjqIw)   | `(https://api.mapbox.com/styles/v1/mapbox/satellite-v9/tiles/256/{z}/{x}/{y}@2x?access_token=MAPBOX_TOKEN_HERE)`     | [LEGAL](https://www.mapbox.com/legal/tos/) |
