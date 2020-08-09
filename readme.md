@@ -15,6 +15,35 @@ A collection of `xyz` raster tiles for use in maps built for QGIS and Mapbox Sty
 
 ---
 
+## Use in geojson.io
+
+> [geojson.io](https://geojson.io) is a quick, simple tool for creating, viewing, and sharing maps.
+
+You can use [geojson.io](https://geojson.io) to add in `xyz` raster tiles:
+
+* Hover over `Meta` > `Add map layer`
+  * You will prompted for a `Layer URL`, you can add in one of the `xyz` layers from above
+  * Add in a `Layer name`
+  * You can toggle layers via the checkboxes in the lower right hand corner
+
+![geojson.io](https://user-images.githubusercontent.com/118112/89742168-624ffb80-da4c-11ea-9a9f-8a8e6ce786b0.gif)
+
+---   
+
+## Use in geojson.net
+
+> [geojson.net](https://geojson.net), Son of geojson.io, is a quick, simple tool for creating, viewing, and sharing maps.   
+
+You can use [geojson.net](https://geojson.net) to add in `xyz` raster tiles:
+
+* At the bottom, click on `Add layer`
+  * Fill at `ID`, `Title` & `Attribution` as needed
+  * In the `URL`, you can add in one of the `xyz` layers from above
+
+![geojson.net](https://user-images.githubusercontent.com/118112/89742169-654aec00-da4c-11ea-9eff-cdc610233409.gif)
+
+---
+
 ## Use in a Mapbox Style
 
 Tiles for use in Mapbox GL or Mapbox GL Native for mobile, can easily be configured.  See the Mapbox [documentation](https://docs.mapbox.com/mapbox-gl-js/style-spec/sources/#raster) on details for how to add raster tiles to your Mapbox style.
