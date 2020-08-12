@@ -3,16 +3,16 @@
 A collection of `xyz` raster tiles for use in maps built for QGIS and Mapbox Styles.  This repo gives sample URLs to various raster `xyz` sources (Some free with attribution, some available with a token key).
 
 
-| Service Name | `xyz`    | Usage Notes |
-| :------------- | :------------- | :------------- |
-| `openstreetmap` <br> ![](https://tile.openstreetmap.org/9/89/206.png) | `https://tile.openstreetmap.org/{z}/{x}/{y}.png` | [tile usage policy](https://operations.osmfoundation.org/policies/tiles/) |
-| `tileservice-charts-noaa-gov`   <br> ![](https://tileservice.charts.noaa.gov/tiles/50000_1/9/89/206.png)   | `https://tileservice.charts.noaa.gov/tiles/50000_1/{z}/{x}/{y}.png`     | [Legal Disclaimer](https://tileservice.charts.noaa.gov/tileset.html) |
-| `naturalearthtiles` <br> ![](https://naturalearthtiles.roblabs.com/tiles/natural_earth_2.raster/2/0/1.png) | `https://naturalearthtiles.roblabs.com/tiles/natural_earth_cross_blended_hypso_shaded_relief.raster/{z}/{x}/{y}.png` | [Developed by Lukas Martinelli](https://github.com/lukasmartinelli/naturalearthtiles#license).  `"maxzoom": 6` |
-| `mapbox-satellite-v9`   <br> ![](https://api.mapbox.com/styles/v1/mapbox/satellite-v9/tiles/256/9/89/206?access_token=pk.eyJ1Ijoicm9ibGFicyIsImEiOiJwVlg0cnZnIn0.yhekddtKwZohGoORaWjqIw)   | `(https://api.mapbox.com/styles/v1/mapbox/satellite-v9/tiles/256/{z}/{x}/{y}@2x?access_token=MAPBOX_TOKEN_HERE)`     | [LEGAL](https://www.mapbox.com/legal/tos/) |
-| `maptiler-hybrid`   <br> ![](https://api.maptiler.com/maps/hybrid/256/9/89/206.jpg?key=BXYgFRiYbzi5zO17YRpY)   | `https://api.maptiler.com/maps/hybrid/256/{z}/{x}/{y}@2x.jpg?key=MAPTILER_TOKEN_HERE`     | [MapTiler](https://www.maptiler.com/copyright/) |
-| `statmen-watercolor`   <br> ![](https://stamen-tiles.a.ssl.fastly.net/watercolor/9/89/206.jpg)   | `https://stamen-tiles.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg`     | [How to Use These Tiles Elsewhere](http://maps.stamen.com/#watercolor/11/32.7134/-117.2059) |
-| `statmen-terrain`   <br> ![](https://stamen-tiles.a.ssl.fastly.net/terrain/9/89/206.jpg)   | `https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg`     | [How to Use These Tiles Elsewhere](http://maps.stamen.com/#terrain/11/32.7134/-117.2059) |
-| `statmen-toner`   <br> ![](https://stamen-tiles.a.ssl.fastly.net/toner/9/89/206.png)   | `https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png`     | [How to Use These Tiles Elsewhere](http://maps.stamen.com/#toner/11/32.7134/-117.2059) |
+| Service Name | `xyz` <br> and Usage Notes |
+| :-------------  | :------------- |
+| `openstreetmap` <br> ![](https://tile.openstreetmap.org/9/89/206.png) | `https://tile.openstreetmap.org/{z}/{x}/{y}.png` <br><br> [tile usage policy](https://operations.osmfoundation.org/policies/tiles/) |
+| `tileservice-charts-noaa-gov`   <br> ![](https://tileservice.charts.noaa.gov/tiles/50000_1/9/89/206.png)   | `https://tileservice.charts.noaa.gov/tiles/50000_1/{z}/{x}/{y}.png` <br><br> [Legal Disclaimer](https://tileservice.charts.noaa.gov/tileset.html) |
+| `naturalearthtiles` <br><br> ![](https://naturalearthtiles.roblabs.com/tiles/natural_earth_2.raster/2/0/1.png) | `https://naturalearthtiles.roblabs.com/tiles/natural_earth_cross_blended_hypso_shaded_relief.raster/{z}/{x}/{y}.png` <br><br> [Developed by Lukas Martinelli](https://github.com/lukasmartinelli/naturalearthtiles#license)<br>`"maxzoom": 6` |
+| `mapbox-satellite-v9`   <br> ![](https://api.mapbox.com/styles/v1/mapbox/satellite-v9/tiles/256/9/89/206?access_token=pk.eyJ1Ijoicm9ibGFicyIsImEiOiJwVlg0cnZnIn0.yhekddtKwZohGoORaWjqIw)   | `https://api.mapbox.com/styles/v1/mapbox/satellite-v9/tiles/256/{z}/{x}/{y}@2x?access_token=MAPBOX_TOKEN_HERE` <br><br> [LEGAL](https://www.mapbox.com/legal/tos/) |
+| `maptiler-hybrid`   <br> ![](https://api.maptiler.com/maps/hybrid/256/9/89/206.jpg?key=BXYgFRiYbzi5zO17YRpY)   | `https://api.maptiler.com/maps/hybrid/256/{z}/{x}/{y}@2x.jpg?key=MAPTILER_TOKEN_HERE` <br><br> [MapTiler](https://www.maptiler.com/copyright/) |
+| `statmen-watercolor`   <br> ![](https://stamen-tiles.a.ssl.fastly.net/watercolor/9/89/206.jpg)   | `https://stamen-tiles.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg` <br><br> [How to Use These Tiles Elsewhere](http://maps.stamen.com/#watercolor/11/32.7134/-117.2059) |
+| `statmen-terrain`   <br> ![](https://stamen-tiles.a.ssl.fastly.net/terrain/9/89/206.jpg)   | `https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg` <br><br> [How to Use These Tiles Elsewhere](http://maps.stamen.com/#terrain/11/32.7134/-117.2059) |
+| `statmen-toner`   <br> ![](https://stamen-tiles.a.ssl.fastly.net/toner/9/89/206.png)   | `https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png` <br><br>  [How to Use These Tiles Elsewhere](http://maps.stamen.com/#toner/11/32.7134/-117.2059) |
 
 ---
 
