@@ -105,14 +105,6 @@
       }
     },
     {
-      "id": "tileservice-charts-noaa-gov",
-      "source": "tileservice-charts-noaa-gov",
-      "type": "raster",
-      "layout": {
-        "visibility": "visible"
-      }
-    },
-    {
       "id": "statmen-watercolor",
       "source": "statmen-watercolor",
       "type": "raster",
@@ -149,12 +141,20 @@
       "source": "mapbox-satellite-v9",
       "type": "raster",
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       }
     },
     {
       "id": "maptiler-hybrid",
       "source": "maptiler-hybrid",
+      "type": "raster",
+      "layout": {
+        "visibility": "none"
+      }
+    },
+    {
+      "id": "tileservice-charts-noaa-gov",
+      "source": "tileservice-charts-noaa-gov",
       "type": "raster",
       "layout": {
         "visibility": "visible"
