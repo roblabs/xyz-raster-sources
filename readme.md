@@ -16,6 +16,16 @@ A collection of `xyz` raster tiles for use in maps built for QGIS and Mapbox Sty
 
 ---
 
+## Use in HTML
+
+An HTML example is shown in this [CodePen.io](https://codepen.io/roblabs/full/JjXXMLz) and the source can be found in the folder [codepen](./codepen).   A couple of *caveats* for these layers:
+
+* "mapbox-satellite-v9",  // Needs an Access token in the style.json
+* "maptiler-hybrid",  // Needs an Access token in the style.json
+* "tileservice-charts-noaa-gov"  // Fetch API cannot load from https://tileservice.charts.noaa.gov due to access control checks.
+
+---
+
 ## Use in geojson.io
 
 > [geojson.io](https://geojson.io) is a quick, simple tool for creating, viewing, and sharing maps.
