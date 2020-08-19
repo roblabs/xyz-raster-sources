@@ -170,6 +170,14 @@
       "layout": {
         "visibility": "visible"
       }
+    },
+    {
+      "id": "arcgis-world-imagery",
+      "source": "arcgis-world-imagery",
+      "type": "raster",
+      "layout": {
+        "visibility": "visible"
+      }
     }
   ]
 }
