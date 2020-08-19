@@ -84,6 +84,17 @@
       "tiles": [
         "https://api.maptiler.com/maps/hybrid/256/{z}/{x}/{y}@2x.jpg?key=MAPTILER_TOKEN_HERE "
       ]
+    },
+    "arcgis-world-imagery": {
+      "attribution": "<a target='_blank' href='https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer'>Source: Esri, Maxar, GeoEye, Earthstar Geographics, CNES/Airbus DS, USDA, USGS, AeroGRID, IGN, and the GIS User Community</a>",
+      "bounds": [-180, -85.05112877980659, 180, 85.0511287798066],
+      "center": [-117.2059, 32.7134, 11],
+      "minzoom": 0,
+      "maxzoom": 17,
+      "type": "raster",
+      "tiles": [
+        "https://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+      ]
     }
   },
   "glyphs": "http://example.com/fonts/{fontstack}/{range}.pbf",

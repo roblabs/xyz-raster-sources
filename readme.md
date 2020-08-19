@@ -13,6 +13,7 @@ A collection of `xyz` raster tiles for use in maps built for QGIS and Mapbox Sty
 | `statmen-watercolor`   <br> ![](https://stamen-tiles.a.ssl.fastly.net/watercolor/9/89/206.jpg)   | `https://stamen-tiles.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg` <br><br> [How to Use These Tiles Elsewhere](http://maps.stamen.com/#watercolor/11/32.7134/-117.2059) |
 | `statmen-terrain`   <br> ![](https://stamen-tiles.a.ssl.fastly.net/terrain/9/89/206.jpg)   | `https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg` <br><br> [How to Use These Tiles Elsewhere](http://maps.stamen.com/#terrain/11/32.7134/-117.2059) |
 | `statmen-toner`   <br> ![](https://stamen-tiles.a.ssl.fastly.net/toner/9/89/206.png)   | `https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png` <br><br>  [How to Use These Tiles Elsewhere](http://maps.stamen.com/#toner/11/32.7134/-117.2059) |
+| `arcgis-world-imagery`   <br> ![](https://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/9/206/89)   | `https://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}` <br><br>  Note order is `ZYX`.  Data is `jpeg`, but there is no extension in the template URL.  `maxzoom = 17` <br><br> <a target='_blank' href='https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer'>Source: Esri, Maxar, GeoEye, Earthstar Geographics, CNES/Airbus DS, USDA, USGS, AeroGRID, IGN, and the GIS User Community</a> |
 
 ---
 
