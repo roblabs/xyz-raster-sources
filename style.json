@@ -108,6 +108,14 @@
       }
     },
     {
+      "id": "arcgis-world-imagery",
+      "source": "arcgis-world-imagery",
+      "type": "raster",
+      "layout": {
+        "visibility": "none"
+      }
+    },
+    {
       "id": "openstreetmap",
       "source": "openstreetmap",
       "type": "raster",
@@ -120,7 +128,7 @@
       "source": "statmen-watercolor",
       "type": "raster",
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       }
     },
     {
@@ -128,7 +136,7 @@
       "source": "statmen-terrain",
       "type": "raster",
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       }
     },
     {
@@ -136,7 +144,7 @@
       "source": "statmen-toner",
       "type": "raster",
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       }
     },
     {
@@ -144,7 +152,7 @@
       "source": "naturalearthtiles",
       "type": "raster",
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       }
     },
     {
@@ -168,15 +176,7 @@
       "source": "tileservice-charts-noaa-gov",
       "type": "raster",
       "layout": {
-        "visibility": "visible"
-      }
-    },
-    {
-      "id": "arcgis-world-imagery",
-      "source": "arcgis-world-imagery",
-      "type": "raster",
-      "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       }
     }
   ]

@@ -7,6 +7,7 @@
 
 // enumerate ids of the layers
 var toggleableLayerIds = [
+  "arcgis-world-imagery",
   "openstreetmap",
   "statmen-watercolor",
   "statmen-terrain",
@@ -27,21 +28,32 @@ var map = new mapboxgl.Map({
 
 //
 var layerInitiallyOff = [
+  "arcgis-world-imagery", // Need to verify license
+  "statmen-watercolor",
+  "statmen-terrain",
+  "statmen-toner",
   "naturalearthtiles",
   "mapbox-satellite-v9",  // Needs an Access token in the style.json
   "maptiler-hybrid",  // Needs an Access token in the style.json
-  "tileservice-charts-noaa-gov"  // Fetch API cannot load https://tileservice.charts.noaa.gov/tiles/50000_1/6/11/25.png due to access control checks.
+  "tileservice-charts-noaa-gov",  // Fetch API cannot load https://tileservice.charts.noaa.gov/tiles/50000_1/6/11/25.png due to access control checks.
 ];
 
 map.on('load', function() {
-  console.log('A load event occurred.');
-  
-  for (var i = 0; i < layerInitiallyOff.length; i++) {
-    console.log(layerInitiallyOff[i])
-    map.setLayoutProperty(layerInitiallyOff[i], "visibility", "none")
-  }
-  
   setupUI()
+
+  // deactivate the UI for an initial list of layers
+  for (var i = 0; i < layerInitiallyOff.length; i++) {
+    let id = layerInitiallyOff[i];
+    console.log(id)
+
+    // Set the map layer visibility to off
+    map.setLayoutProperty(layerInitiallyOff[i], "visibility", "none")
+
+    // set the menu UI to off
+    let el = document.getElementById(id);
+    el.className = ""
+  }
+
 });
 
 
@@ -53,6 +65,7 @@ function setupUI () {
     var link = document.createElement("a");
     link.href = "#";
     link.className = "active";
+    link.id = id;
     link.textContent = id;
 
     link.onclick = function (e) {
@@ -62,7 +75,7 @@ function setupUI () {
 
       var visibility = map.getLayoutProperty(clickedLayer, "visibility");
 
-      // toggle layer visibility 
+      // toggle layer visibility
       //   by changing the layout object's visibility property
       if (visibility === "visible") {
         map.setLayoutProperty(clickedLayer, "visibility", "none");
@@ -77,4 +90,3 @@ function setupUI () {
     layers.appendChild(link);
   }
 }
-
