@@ -1,0 +1,27 @@
+{
+  "version": 8,
+  "name": "Mapbox Satellite",
+  "metadata": {},
+  "center": [-117.3, 32.6],
+  "zoom": 7,
+  "bearing": 0,
+  "pitch": 0,
+  "sprite": "",
+  "glyphs": "",
+  "sources": {
+    "satellite": {"url": "mapbox://mapbox.satellite", "type": "raster"}
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "layout": {"visibility": "visible"}
+    },
+    {
+      "id": "satellite",
+      "type": "raster",
+      "source": "satellite",
+      "layout": {"visibility": "visible"}
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "version": 8,
+  "name": "openstreetmap",
+  "metadata": {},
+  "center": [-117.3, 32.6],
+  "zoom": 7,
+  "bearing": 0,
+  "pitch": 0,
+  "sprite": "",
+  "glyphs": "",
+  "sources": {
+    "raster": {
+      "url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+      "type": "raster"
+    }
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "layout": {"visibility": "visible"}
+    },
+    {
+      "id": "raster",
+      "type": "raster",
+      "source": "raster",
+      "layout": {"visibility": "visible"}
+    }
+  ]
+}
