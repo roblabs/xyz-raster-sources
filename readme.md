@@ -70,6 +70,10 @@ There are Mapbox styles for some of the XYZ rasters.  See the full list at [robl
 * https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/mapbox-satellite.json
 * https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/stamen-multi-rasters.json
 
+*Example of XYZ rasters in iOS*
+
+<img src="https://user-images.githubusercontent.com/118112/135372760-578dfe9a-4688-4fb1-a69f-58f05de34225.gif" width=50%>
+
 ### Soft Proofing Tiles
 
 You can Soft Proof your tiles before they are installed into mobile by using [Tileserver GL](https://github.com/maptiler/tileserver-gl#readme).  See the file
