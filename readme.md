@@ -60,7 +60,17 @@ You can use [geojson.net](https://geojson.net) to add in `xyz` raster tiles:
 
 Tiles for use in Mapbox GL or Mapbox GL Native for mobile, can easily be configured.  See the Mapbox [documentation](https://docs.mapbox.com/mapbox-gl-js/style-spec/sources/#raster) on details for how to add raster tiles to your Mapbox style.
 
-#### Soft Proofing Tiles
+### Mapbox Styles hosted as `https`
+
+There are Mapbox styles for some of the XYZ rasters.  See the full list at [roblabs/xyz-raster-sources/styles](https://github.com/roblabs/xyz-raster-sources/tree/master/styles), or you can use these hosted styles in your application.
+
+* https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/naturalearthtiles.json
+* https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/tileservice-charts-noaa-gov.json
+* https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/arcgis-world-imagery.json
+* https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/mapbox-satellite.json
+* https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/stamen-multi-rasters.json
+
+### Soft Proofing Tiles
 
 You can Soft Proof your tiles before they are installed into mobile by using [Tileserver GL](https://github.com/maptiler/tileserver-gl#readme).  See the file
 
