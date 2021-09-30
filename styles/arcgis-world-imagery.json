@@ -1,0 +1,28 @@
+{
+  "version": 8,
+  "name": "arcgis-world-imagery",
+  "metadata": {},
+  "center": [-117.3, 32.6],
+  "zoom": 7,
+  "bearing": 0,
+  "pitch": 0,
+  "sprite": "",
+  "glyphs": "",
+  "sources": {
+    "satellite": {"tiles": ["https://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"],
+    "type": "raster"}
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "layout": {"visibility": "visible"}
+    },
+    {
+      "id": "satellite",
+      "type": "raster",
+      "source": "satellite",
+      "layout": {"visibility": "visible"}
+    }
+  ]
+}

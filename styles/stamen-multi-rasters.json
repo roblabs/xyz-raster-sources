@@ -1,0 +1,26 @@
+{
+  "version": 8,
+  "name": "stamen-watercolor-terrain-toner",
+  "metadata": {},
+  "center": [-117.3, 32.6],
+  "zoom": 7,
+  "bearing": 0,
+  "pitch": 0,
+  "sprite": "",
+  "glyphs": "",
+  "sources": {
+    "watercolor": { "type": "raster", "tiles": ["https://stamen-tiles.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg"]},
+    "terrain":    { "type": "raster", "tiles": ["https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg"]},
+    "toner":      { "type": "raster", "tiles": ["https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png"]}
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "layout": {"visibility": "visible"}
+    },
+    {"type":"raster", "layout":{"visibility":"visible"}, "id":"watercolor", "source":"watercolor"},
+    {"type":"raster", "layout":{"visibility":"visible"}, "id":"terrain",    "source":"terrain"},
+    {"type":"raster", "layout":{"visibility":"visible"}, "id":"toner",      "source":"toner"}
+  ]
+}
