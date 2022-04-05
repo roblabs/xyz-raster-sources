@@ -1,6 +1,8 @@
 ## Raster Tiles
 
-A collection of `xyz` raster tiles for use in maps built for QGIS and Mapbox Styles.  This repo gives sample URLs to various raster `xyz` sources (Some free with attribution, some available with a token key).
+A collection of `xyz` raster tiles for use in maps built for mobile devices, QGIS and Mapbox Styles.  This repo gives sample URLs to various raster `xyz` sources (Some free with attribution, some available with a token key).
+
+Created by [RobLabs.com](https://roblabs.com) in Summer 2020 for use in production of our [#mapsForNonProfits](twitter.com/hashtag/mapsForNonProfits).
 
 
 | Service Name | `xyz` <br> and Usage Notes |
@@ -15,22 +17,13 @@ A collection of `xyz` raster tiles for use in maps built for QGIS and Mapbox Sty
 | `statmen-toner`   <br> ![](https://stamen-tiles.a.ssl.fastly.net/toner/9/89/206.png)   | `https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png` <br><br>  [How to Use These Tiles Elsewhere](http://maps.stamen.com/#toner/11/32.7134/-117.2059) |
 | `arcgis-world-imagery-ZYX`   <br> ![](https://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/9/206/89)   | `https://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}` <br><br>  Note order is `ZYX`.  Data is `jpeg`, but there is no extension in the template URL.  `maxzoom = 17` <br><br> <a target='_blank' href='https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer'>Source: Esri, Maxar, GeoEye, Earthstar Geographics, CNES/Airbus DS, USDA, USGS, AeroGRID, IGN, and the GIS User Community</a> |
 | `NAIP-USDA_CONUS_PRIME-ZYX`   <br> ![](https://gis.apfo.usda.gov/arcgis/rest/services/NAIP/USDA_CONUS_PRIME/ImageServer/tile/9/206/89)   | `https://gis.apfo.usda.gov/arcgis/rest/services/NAIP/USDA_CONUS_PRIME/ImageServer/tile/{z}/{y}/{x}` <br><br>  Note order is `ZYX`.  Data is `jpeg`, but there is no extension in the template URL.  `maxzoom = 17` <br><br> <a target='_blank' href='https://gis.apfo.usda.gov/arcgis/rest/services/NAIP/USDA_CONUS_PRIME/ImageServer'>Source: USDA NAIP</a> |
-
----
-
-## Use in HTML
-
-An HTML example is shown in this [CodePen.io](https://codepen.io/roblabs/full/JjXXMLz) and the source can be found in the folder [codepen](./codepen).   A couple of *caveats* for these layers:
-
-* "mapbox-satellite-v9",  // Needs an Access token in the style.json
-* "maptiler-hybrid",  // Needs an Access token in the style.json
-* "tileservice-charts-noaa-gov"  // Fetch API cannot load from https://tileservice.charts.noaa.gov due to access control checks.
+| `PortlandMaps.com`   <br> ![](https://user-images.githubusercontent.com/118112/161826591-7519f5bd-1434-447f-b47b-709cb45431ed.gif)   | `https://www.portlandmaps.com/arcgis/rest/services/Public/Aerial_Photos_Summer_2021/MapServer/tile/{z}/{y}/{x}` <br><br>  Note order is `ZYX`.  Data is `jpeg`, but there is no extension in the template URL.  <br><br> <a target='_blank' href='https://www.portlandmaps.com/arcgis/rest/services/Public'>Source: @PortlandGov, © City of Portland, Oregon</a> |
 
 ---
 
 ## Use in geojson.io
 
-> [geojson.io](https://geojson.io) is a quick, simple tool for creating, viewing, and sharing maps.
+> *[geojson.io](https://geojson.io) is a quick, simple tool for creating, viewing, and sharing maps.*
 
 You can use [geojson.io](https://geojson.io) to add in `xyz` raster tiles:
 
@@ -42,20 +35,6 @@ You can use [geojson.io](https://geojson.io) to add in `xyz` raster tiles:
 ![geojson.io](https://user-images.githubusercontent.com/118112/89742168-624ffb80-da4c-11ea-9a9f-8a8e6ce786b0.gif)
 
 ---   
-
-## Use in geojson.net
-
-> [geojson.net](https://geojson.net), Son of geojson.io, is a quick, simple tool for creating, viewing, and sharing maps.   
-
-You can use [geojson.net](https://geojson.net) to add in `xyz` raster tiles:
-
-* At the bottom, click on `Add layer`
-  * Fill at `ID`, `Title` & `Attribution` as needed
-  * In the `URL`, you can add in one of the `xyz` layers from above
-
-![geojson.net](https://user-images.githubusercontent.com/118112/89742169-654aec00-da4c-11ea-9eff-cdc610233409.gif)
-
----
 
 ## Use in a Mapbox Style
 
