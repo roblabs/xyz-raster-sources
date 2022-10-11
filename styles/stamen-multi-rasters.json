@@ -6,8 +6,6 @@
   "zoom": 7,
   "bearing": 0,
   "pitch": 0,
-  "sprite": "",
-  "glyphs": "",
   "sources": {
     "watercolor": { "type": "raster", "tiles": ["https://stamen-tiles.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg"]},
     "terrain":    { "type": "raster", "tiles": ["https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg"]},

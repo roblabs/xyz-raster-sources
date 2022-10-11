@@ -6,8 +6,6 @@
   "zoom": 7,
   "bearing": 0,
   "pitch": 0,
-  "sprite": "",
-  "glyphs": "",
   "sources": {
     "raster": {
       "tiles": ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],

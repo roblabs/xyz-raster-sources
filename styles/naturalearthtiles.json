@@ -6,8 +6,6 @@
   "zoom": 7,
   "bearing": 0,
   "pitch": 0,
-  "sprite": "",
-  "glyphs": "",
   "sources": {
     "raster": {
       "tiles": ["https://naturalearthtiles.roblabs.com/tiles/natural_earth_cross_blended_hypso_shaded_relief.raster/{z}/{x}/{y}.png"],
