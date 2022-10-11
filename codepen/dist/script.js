@@ -17,7 +17,7 @@ var toggleableLayerIds = [
   "maptiler-hybrid"
 ];
 
-var map = new mapboxgl.Map({
+var map = new maplibregl.Map({
   container: "map",
   style:
     "https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/style.json",
