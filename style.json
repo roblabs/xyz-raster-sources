@@ -12,17 +12,6 @@
       "type": "raster",
       "tiles": ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"]
     },
-    "tileservice-charts-noaa-gov": {
-      "attribution": "<a target='_blank' href='https://tileservice.charts.noaa.gov/tileset.html'>NOAA</a>",
-      "bounds": [-180, -85.05112877980659, 180, 85.0511287798066],
-      "center": [-117.2059, 32.7134, 11],
-      "minzoom": 0,
-      "maxzoom": 30,
-      "type": "raster",
-      "tiles": [
-        "https://tileservice.charts.noaa.gov/tiles/50000_1/{z}/{x}/{y}.png"
-      ]
-    },
     "statmen-watercolor": {
       "attribution": "Map tiles by <a target='_blank' href='http://stamen.com'>Stamen Design</a>, under <a target='_blank' href='http://creativecommons.org/licenses/by/3.0'>CC BY 3.0</a>. Data by <a target='_blank' href='http://openstreetmap.org'>OpenStreetMap</a>, under <a target='_blank' href='http://creativecommons.org/licenses/by-sa/3.0'>CC BY SA</a>.",
       "bounds": [-180, -85.05112877980659, 180, 85.0511287798066],
@@ -166,14 +155,6 @@
     {
       "id": "maptiler-hybrid",
       "source": "maptiler-hybrid",
-      "type": "raster",
-      "layout": {
-        "visibility": "none"
-      }
-    },
-    {
-      "id": "tileservice-charts-noaa-gov",
-      "source": "tileservice-charts-noaa-gov",
       "type": "raster",
       "layout": {
         "visibility": "none"

@@ -14,8 +14,7 @@ var toggleableLayerIds = [
   "statmen-toner",
   "naturalearthtiles",
   "mapbox-satellite-v9",
-  "maptiler-hybrid",
-  "tileservice-charts-noaa-gov"
+  "maptiler-hybrid"
 ];
 
 var map = new mapboxgl.Map({
@@ -34,8 +33,7 @@ var layerInitiallyOff = [
   "statmen-toner",
   "naturalearthtiles",
   "mapbox-satellite-v9",  // Needs an Access token in the style.json
-  "maptiler-hybrid",  // Needs an Access token in the style.json
-  "tileservice-charts-noaa-gov"  // Fetch API cannot load https://tileservice.charts.noaa.gov/tiles/50000_1/6/11/25.png due to access control checks.
+  "maptiler-hybrid"  // Needs an Access token in the style.json
 ];
 
 map.on('load', function() {
