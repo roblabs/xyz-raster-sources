@@ -2,12 +2,13 @@
 [![GitHub Repo Source](https://img.shields.io/github/stars/roblabs/xyz-raster-sources?label=Source&style=social)](https://github.com/roblabs/xyz-raster-sources)
 ![GitHub](https://img.shields.io/github/license/roblabs/xyz-raster-sources)
 
-## Raster Tiles
+## XYZ Raster Tiles
 
 A collection of `xyz` raster tiles for use in maps built for mobile devices, QGIS and Mapbox Styles.  This repo gives sample URLs to various raster `xyz` sources (Some free with attribution, some available with a token key).
 
-Created by [RobLabs.com](https://roblabs.com) in Summer 2020 for use in production of our [#mapsForNonProfits](twitter.com/hashtag/mapsForNonProfits).
+Created by [RobLabs.com](https://roblabs.com) in Summer 2020 for use in production of our [#mapsForNonProfits](https://twitter.com/hashtag/mapsForNonProfits).
 
+---
 
 | Service Name | `xyz` <br> and Usage Notes |
 | :-------------  | :------------- |
@@ -49,16 +50,19 @@ Tiles for use in Mapbox GL or Mapbox GL Native for mobile, can easily be configu
 
 ### Mapbox Styles hosted as `https`
 
-There are Mapbox styles for some of the XYZ rasters.  See the full list at [roblabs/xyz-raster-sources/styles](https://github.com/roblabs/xyz-raster-sources/tree/master/styles), or you can use these hosted styles in your application.
+There are Mapbox styles for some of the XYZ rasters.  See the full list at [roblabs/xyz-raster-sources/styles](styles/), or you can use these hosted styles in your application.
 
-* https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/naturalearthtiles.json
-* https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/arcgis-world-imagery.json
-* https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/mapbox-satellite.json
-* https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/stamen-multi-rasters.json
+You can also find serveral styles hosted by MapLibre.org.  See <https://github.com/maplibre/demotiles>.
+
+* <https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/arcgis-world-imagery.json>
+* <https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/mapbox-satellite.json>
+* <https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/naturalearthtiles.json>
+* <https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/openstreetmap.json>
+* <https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/stamen-multi-rasters.json>
 
 *Example of XYZ rasters in iOS*
 
-<img src="https://user-images.githubusercontent.com/118112/135372760-578dfe9a-4688-4fb1-a69f-58f05de34225.gif" width=50%>
+<img src="https://user-images.githubusercontent.com/118112/135372760-578dfe9a-4688-4fb1-a69f-58f05de34225.gif" width=31.8%>
 
 ### Soft Proofing Tiles
 
