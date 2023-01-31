@@ -52,13 +52,14 @@ Tiles for use in Mapbox GL or Mapbox GL Native for mobile, can easily be configu
 
 There are Mapbox styles for some of the XYZ rasters.  See the full list at [roblabs/xyz-raster-sources/styles](styles/), or you can use these hosted styles in your application.
 
-You can also find serveral styles hosted by MapLibre.org.  See <https://github.com/maplibre/demotiles>.
+You can also find several styles hosted by MapLibre.org.  See <https://github.com/maplibre/demotiles>.
 
 * <https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/arcgis-world-imagery.json>
 * <https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/mapbox-satellite.json>
 * <https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/naturalearthtiles.json>
 * <https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/openstreetmap.json>
 * <https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/stamen-multi-rasters.json>
+* <https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/usda-naip.json>
 
 *Example of XYZ rasters in iOS*
 
