@@ -1,3 +1,7 @@
+[<img src="https://avatars.githubusercontent.com/u/118112" style="border-radius:4px" width="20" />](https://roblabs.com)
+[![GitHub Repo Source](https://img.shields.io/github/stars/roblabs/xyz-raster-sources?label=Source&style=social)](https://github.com/roblabs/xyz-raster-sources)
+![GitHub](https://img.shields.io/github/license/roblabs/xyz-raster-sources)
+
 ## Raster Tiles
 
 A collection of `xyz` raster tiles for use in maps built for mobile devices, QGIS and Mapbox Styles.  This repo gives sample URLs to various raster `xyz` sources (Some free with attribution, some available with a token key).
@@ -15,7 +19,7 @@ Created by [RobLabs.com](https://roblabs.com) in Summer 2020 for use in producti
 | `statmen-terrain`   <br> ![](https://stamen-tiles.a.ssl.fastly.net/terrain/9/89/206.jpg)   | `https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg` <br><br> [How to Use These Tiles Elsewhere](http://maps.stamen.com/#terrain/11/32.7134/-117.2059) |
 | `statmen-toner`   <br> ![](https://stamen-tiles.a.ssl.fastly.net/toner/9/89/206.png)   | `https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png` <br><br>  [How to Use These Tiles Elsewhere](http://maps.stamen.com/#toner/11/32.7134/-117.2059) |
 | `arcgis-world-imagery-ZYX`   <br> ![](https://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/9/206/89)   | `https://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}` <br><br>  Note order is `ZYX`.  Data is `jpeg`, but there is no extension in the template URL.  `maxzoom = 17` <br><br> <a target='_blank' href='https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer'>Source: Esri, Maxar, GeoEye, Earthstar Geographics, CNES/Airbus DS, USDA, USGS, AeroGRID, IGN, and the GIS User Community</a> |
-| `NAIP-USDA_CONUS_PRIME-ZYX`   <br> ![](https://gis.apfo.usda.gov/arcgis/rest/services/NAIP/USDA_CONUS_PRIME/ImageServer/tile/9/206/89)   | `https://gis.apfo.usda.gov/arcgis/rest/services/NAIP/USDA_CONUS_PRIME/ImageServer/tile/{z}/{y}/{x}` <br><br>  Note order is `ZYX`.  Data is `jpeg`, but there is no extension in the template URL.  `maxzoom = 17` <br><br> <a target='_blank' href='https://gis.apfo.usda.gov/arcgis/rest/services/NAIP/USDA_CONUS_PRIME/ImageServer'>Source: USDA NAIP</a> |
+| `NAIP-USDA_CONUS_PRIME-ZYX` (updated 2022)   <br> ![](https://gis.apfo.usda.gov/arcgis/rest/services/NAIP/USDA_CONUS_PRIME/ImageServer/tile/9/206/89)   | `https://gis.apfo.usda.gov/arcgis/rest/services/NAIP/USDA_CONUS_PRIME/ImageServer/tile/{z}/{y}/{x}` <br><br>  Note order is `ZYX`.  Data is `jpeg`, but there is no extension in the template URL.  `maxzoom = 17` <br><br> <a target='_blank' href='https://gis.apfo.usda.gov/arcgis/rest/services/NAIP/USDA_CONUS_PRIME/ImageServer'>Source: USDA NAIP</a> |
 | `PortlandMaps.com`   <br> ![](https://user-images.githubusercontent.com/118112/161826591-7519f5bd-1434-447f-b47b-709cb45431ed.gif)   | `https://www.portlandmaps.com/arcgis/rest/services/Public/Aerial_Photos_Summer_2021/MapServer/tile/{z}/{y}/{x}` <br><br>  Note order is `ZYX`.  Data is `jpeg`, but there is no extension in the template URL.  <br><br> <a target='_blank' href='https://www.portlandmaps.com/arcgis/rest/services/Public'>Source: @PortlandGov, © City of Portland, Oregon</a> |
 
 ---
