@@ -3,3 +3,12 @@ url: "https://RobLabs.com/xyz-raster-sources"
 repository: roblabs/xyz-raster-sources
 
 remote_theme: https://github.com/benbalter/retlab
+
+# https://jekyllrb.com/docs/plugins/
+# GitHub Pages uses the following dependencies and versions:
+#   https://pages.github.com/versions/
+plugins:
+  - jekyll-remote-theme     # https://github.com/benbalter/jekyll-remote-theme
+  - jekyll-avatar           # https://github.com/jekyll/jekyll-avatar
+  - jekyll-feed             # https://jekyllrb.com/docs/configuration/options/#serve-command-options
+  - jekyll-github-metadata  # https://github.com/jekyll/github-metadata
