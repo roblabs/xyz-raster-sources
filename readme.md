@@ -1,27 +1,22 @@
+---
+
+---
+
 [<img src="https://avatars.githubusercontent.com/u/118112" style="border-radius:4px" width="20" />](https://roblabs.com)
-[![GitHub Repo Source](https://img.shields.io/github/stars/roblabs/xyz-raster-sources?label=Source&style=social)](https://github.com/roblabs/xyz-raster-sources)
-![GitHub](https://img.shields.io/github/license/roblabs/xyz-raster-sources)
+[![GitHub Repo Source](https://img.shields.io/github/stars/{{ site.repository }}?label=Source&style=social)](https://github.com/{{ site.repository }})
+![GitHub](https://img.shields.io/github/license/{{ site.repository }})
 
 ## XYZ Raster Tiles
 
-A collection of `xyz` raster tiles for use in maps built for mobile devices, QGIS and Mapbox Styles.  This repo gives sample URLs to various raster `xyz` sources (Some free with attribution, some available with a token key).
+A collection of `xyz` raster tiles for use in maps built for mobile devices, QGIS and MapLibre Styles.  This repo gives sample URLs to various raster `xyz` sources.
 
 Created by [RobLabs.com](https://roblabs.com) in Summer 2020 for use in production of our [#mapsForNonProfits](https://twitter.com/hashtag/mapsForNonProfits).
 
 ---
 
-| Service Name | `xyz` <br> and Usage Notes |
-| :-------------  | :------------- |
-| `openstreetmap` <br> ![](https://tile.openstreetmap.org/9/89/206.png) | `https://tile.openstreetmap.org/{z}/{x}/{y}.png` <br><br> [tile usage policy](https://operations.osmfoundation.org/policies/tiles/) |
-| `naturalearthtiles` <br><br> ![](https://naturalearthtiles.roblabs.com/tiles/natural_earth_2.raster/2/0/1.png) | `https://naturalearthtiles.roblabs.com/tiles/natural_earth_cross_blended_hypso_shaded_relief.raster/{z}/{x}/{y}.png` <br><br> [Developed by Lukas Martinelli](https://github.com/lukasmartinelli/naturalearthtiles#license)<br>`"maxzoom": 6` |
-| `mapbox-satellite-v9`   <br> ![](https://api.mapbox.com/styles/v1/mapbox/satellite-v9/tiles/256/9/89/206?access_token=pk.eyJ1Ijoicm9ibGFicyIsImEiOiJwVlg0cnZnIn0.yhekddtKwZohGoORaWjqIw)   | `https://api.mapbox.com/styles/v1/mapbox/satellite-v9/tiles/256/{z}/{x}/{y}@2x?access_token=MAPBOX_TOKEN_HERE` <br><br> [LEGAL](https://www.mapbox.com/legal/tos/) |
-| `maptiler-hybrid`   <br> ![](https://api.maptiler.com/maps/hybrid/256/9/89/206.jpg?key=BXYgFRiYbzi5zO17YRpY)   | `https://api.maptiler.com/maps/hybrid/256/{z}/{x}/{y}@2x.jpg?key=MAPTILER_TOKEN_HERE` <br><br> [MapTiler](https://www.maptiler.com/copyright/) |
-| `statmen-watercolor`   <br> ![](https://stamen-tiles.a.ssl.fastly.net/watercolor/9/89/206.jpg)   | `https://stamen-tiles.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg` <br><br> [How to Use These Tiles Elsewhere](http://maps.stamen.com/#watercolor/11/32.7134/-117.2059) |
-| `statmen-terrain`   <br> ![](https://stamen-tiles.a.ssl.fastly.net/terrain/9/89/206.jpg)   | `https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg` <br><br> [How to Use These Tiles Elsewhere](http://maps.stamen.com/#terrain/11/32.7134/-117.2059) |
-| `statmen-toner`   <br> ![](https://stamen-tiles.a.ssl.fastly.net/toner/9/89/206.png)   | `https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png` <br><br>  [How to Use These Tiles Elsewhere](http://maps.stamen.com/#toner/11/32.7134/-117.2059) |
-| `arcgis-world-imagery-ZYX`   <br> ![](https://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/9/206/89)   | `https://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}` <br><br>  Note order is `ZYX`.  Data is `jpeg`, but there is no extension in the template URL.  `maxzoom = 17` <br><br> <a target='_blank' href='https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer'>Source: Esri, Maxar, GeoEye, Earthstar Geographics, CNES/Airbus DS, USDA, USGS, AeroGRID, IGN, and the GIS User Community</a> |
-| `NAIP-USDA_CONUS_PRIME-ZYX` (updated 2022)   <br> ![](https://gis.apfo.usda.gov/arcgis/rest/services/NAIP/USDA_CONUS_PRIME/ImageServer/tile/9/206/89)   | `https://gis.apfo.usda.gov/arcgis/rest/services/NAIP/USDA_CONUS_PRIME/ImageServer/tile/{z}/{y}/{x}` <br><br>  Note order is `ZYX`.  Data is `jpeg`, but there is no extension in the template URL.  `maxzoom = 17` <br><br> <a target='_blank' href='https://gis.apfo.usda.gov/arcgis/rest/services/NAIP/USDA_CONUS_PRIME/ImageServer'>Source: USDA NAIP</a> |
-| `PortlandMaps.com`   <br> ![](https://user-images.githubusercontent.com/118112/161826591-7519f5bd-1434-447f-b47b-709cb45431ed.gif)   | `https://www.portlandmaps.com/arcgis/rest/services/Public/Aerial_Photos_Summer_2021/MapServer/tile/{z}/{y}/{x}` <br><br>  Note order is `ZYX`.  Data is `jpeg`, but there is no extension in the template URL.  <br><br> <a target='_blank' href='https://www.portlandmaps.com/arcgis/rest/services/Public'>Source: @PortlandGov, © City of Portland, Oregon</a> |
+| Sample Tile <img width=150/> | XYZ — selecting the XYZ URL will copy <img width=200/> |
+| :-------------  | :------------- |{% for source in site.data.sources %}
+| <br><img width="128px" alt="{{ source.name }}" src="{{ source.sample }}"> | <input style="width: 250%" onclick="this.select(); document.execCommand('copy');" type='text' value='{{ source.xyz }}'/> <br> [{{ source.name }}]({{ source.usage }}) | {% endfor %}
 
 ---
 
@@ -44,35 +39,41 @@ You can use [geojson.io](https://geojson.io) to add in `xyz` raster tiles:
 
 ---   
 
-## Use in a Mapbox Style
+## Use in a Mapbox or MapLibre Style
 
-Tiles for use in Mapbox GL or Mapbox GL Native for mobile, can easily be configured.  See the Mapbox [documentation](https://docs.mapbox.com/mapbox-gl-js/style-spec/sources/#raster) on details for how to add raster tiles to your Mapbox style.
+Tiles for use in Mapbox GL or Mapbox GL Native for mobile, can easily be configured.  See the Mapbox [documentation](https://docs.mapbox.com/mapbox-gl-js/style-spec/sources/#raster) or MapLibre [documentation](https://maplibre.org/maplibre-gl-js-docs/example/map-tiles/) on details for how to add raster tiles to your style.
 
 ### Mapbox Styles hosted as `https`
 
-There are Mapbox styles for some of the XYZ rasters.  See the full list at [roblabs/xyz-raster-sources/styles](styles/), or you can use these hosted styles in your application.
-
 You can also find several styles hosted by MapLibre.org.  See <https://github.com/maplibre/demotiles>.
 
-* <https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/arcgis-world-imagery.json>
-* <https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/mapbox-satellite.json>
-* <https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/naturalearthtiles.json>
-* <https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/openstreetmap.json>
-* <https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/stamen-multi-rasters.json>
-* <https://raw.githubusercontent.com/roblabs/xyz-raster-sources/master/styles/usda-naip.json>
+| style.json — selecting the style URL will copy <img width=200/> |
+| :-- |{% for data in site.data.styles %}
+| <input style="width: 150%" onclick="this.select(); document.execCommand('copy');" type='text' value='{{ data.style }}'/> | {% endfor %}
+
+---
 
 *Example of XYZ rasters in iOS*
 
-<img src="https://user-images.githubusercontent.com/118112/135372760-578dfe9a-4688-4fb1-a69f-58f05de34225.gif" width=31.8%>
+<img src="https://user-images.githubusercontent.com/118112/135372760-578dfe9a-4688-4fb1-a69f-58f05de34225.gif" width="256px%">
 
-### Soft Proofing Tiles
+### TileServer GL
 
-You can Soft Proof your tiles before they are installed into mobile by using [Tileserver GL](https://github.com/maptiler/tileserver-gl#readme).  See the file
+You can inspect *"Vector and raster maps with GL styles"* before they are installed onto production or  mobile by using [TileServer GL](https://maptiler-tileserver.readthedocs.io).
 
 
+```bash
+# Create a short alias for TileServer GL
+alias tsgl="docker run --rm -it -v $(pwd):/data -p 8080:8080 maptiler/tileserver-gl"
+tsgl -v
+tsgl -h
 ```
-alias tsgl='docker run --rm -it -v "$(pwd)":/data -p 8081:80 maptiler/tileserver-gl --no-cors --verbose'
-```
+
+---
+
+## Use in TileJSON.io
+
+<https://www.azavea.com/blog/2019/03/04/introducing-tilejson-io>
 
 ---
 

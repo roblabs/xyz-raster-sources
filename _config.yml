@@ -1,1 +1,5 @@
-theme: jekyll-theme-tactile
+theme: jekyll-theme-tactiledestination: ./tmp/_site/www
+url: "https://RobLabs.com/xyz-raster-sources"
+repository: roblabs/xyz-raster-sources
+
+remote_theme: https://github.com/benbalter/retlab
