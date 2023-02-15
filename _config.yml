@@ -1,4 +1,4 @@
-theme: jekyll-theme-tactiledestination: ./tmp/_site/www
+destination: ./tmp/_site/www
 url: "https://RobLabs.com/xyz-raster-sources"
 repository: roblabs/xyz-raster-sources
 
