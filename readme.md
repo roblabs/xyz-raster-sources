@@ -1,15 +1,8 @@
-
-<div>
-  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
-</code></pre></div>  </div>
-
-  <hr />
-
-  <p><a href="https://roblabs.com"><img src="https://avatars.githubusercontent.com/u/118112" style="border-radius:4px" width="20" /></a>
+<p><a href="https://roblabs.com"><img src="https://avatars.githubusercontent.com/u/118112" style="border-radius:4px" width="20" /></a>
 <a href="https://github.com/roblabs/xyz-raster-sources"><img src="https://img.shields.io/github/stars/roblabs/xyz-raster-sources?label=Source&amp;style=social" alt="GitHub Repo Source" /></a>
 <img src="https://img.shields.io/github/license/roblabs/xyz-raster-sources" alt="GitHub" /></p>
 
-  <h2 id="xyz-raster-tiles">XYZ Raster Tiles</h2>
+  <h2 id="xyz-raster-tiles-sources">XYZ Raster Tiles Sources</h2>
 
   <p>A collection of <code class="language-plaintext highlighter-rouge">xyz</code> raster tiles for use in maps built for mobile devices, QGIS and MapLibre Styles.  This repo gives sample URLs to various raster <code class="language-plaintext highlighter-rouge">xyz</code> sources.</p>
 
@@ -156,5 +149,3 @@ tsgl <span class="nt">-h</span>
   <p><em>Example of XYZ rasters in iOS</em></p>
 
   <p><img src="https://user-images.githubusercontent.com/118112/135372760-578dfe9a-4688-4fb1-a69f-58f05de34225.gif" width="31.8%" /></p>
-
-</div>

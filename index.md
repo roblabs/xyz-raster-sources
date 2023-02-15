@@ -6,7 +6,7 @@
 [![GitHub Repo Source](https://img.shields.io/github/stars/{{ site.repository }}?label=Source&style=social)](https://github.com/{{ site.repository }})
 ![GitHub](https://img.shields.io/github/license/{{ site.repository }})
 
-## XYZ Raster Tiles
+## XYZ Raster Tiles Sources
 
 A collection of `xyz` raster tiles for use in maps built for mobile devices, QGIS and MapLibre Styles.  This repo gives sample URLs to various raster `xyz` sources.
 
