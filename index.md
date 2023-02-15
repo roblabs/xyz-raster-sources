@@ -1,5 +1,5 @@
 ---
-# file:  index.md
+
 ---
 
 [<img src="https://avatars.githubusercontent.com/u/118112" style="border-radius:4px" width="20" />](https://roblabs.com)
@@ -14,9 +14,38 @@ Created by [RobLabs.com](https://roblabs.com) in Summer 2020 for use in producti
 
 ---
 
-| Sample Tile <img width=150/> | XYZ — selecting the XYZ URL will copy <img width=200/> |
+{% if jekyll.environment == "production" %}
+| Sample Tile <img width=150/> | XYZ: selecting the XYZ URL will copy <img width=200/> |
 | :-------------  | :------------- |{% for source in site.data.sources %}
-| <br><img width="128px" alt="{{ source.name }}" src="{{ source.sample }}"> | <input style="width: 250%" onclick="this.select(); document.execCommand('copy');" type='text' value='{{ source.xyz }}'/> <br> [{{ source.name }}]({{ source.usage }}) | {% endfor %}
+| <br><img width="128px" alt="{{ source.name }}" src="{{ source.sample }}"> | <input style="width: 150%" onclick="this.select(); document.execCommand('copy');" type='text' value='{{ source.xyz }}'/> <br>   [{{ source.name }}]({{ source.usage }}){:target='_blank'}   | {% endfor %}
+{% endif %}
+
+{% if jekyll.environment == "development" %}
+| Sample Tile <img width=150/> | XYZ <img width=200/> |
+| :-------------  | :------------- |{% for source in site.data.sources %}
+| <br><img width="128px" alt="{{ source.name }}" src="{{ source.sample }}"> |  `{{ source.xyz }}` <br> [{{ source.name }}]({{ source.usage }}){:target='_blank'}  | {% endfor %}
+{% endif %}
+
+## Use in a Mapbox or MapLibre Style
+
+Tiles for use in Mapbox GL or Mapbox GL Native for mobile, can easily be configured.  See the Mapbox [documentation](https://docs.mapbox.com/mapbox-gl-js/style-spec/sources/#raster) or MapLibre [documentation](https://maplibre.org/maplibre-gl-js-docs/example/map-tiles/) on details for how to add raster tiles to your style.
+
+### Mapbox Styles hosted as `https`
+
+You can also find several styles hosted by MapLibre.org.  See <https://github.com/maplibre/demotiles>.
+
+
+{% if jekyll.environment == "production" %}
+| style.json: selecting the style URL will copy <img width=200/> |
+| :-- |{% for data in site.data.styles %}
+| <input style="width: 150%" onclick="this.select(); document.execCommand('copy');" type='text' value='{{ data.style }}'/> | {% endfor %}
+{% endif %}
+
+{% if jekyll.environment == "development" %}
+| style.json <img width=200/> |
+| :-- |{% for data in site.data.styles %}
+| <{{ data.style }}> | {% endfor %}
+{% endif %}
 
 ---
 
@@ -38,24 +67,6 @@ You can use [geojson.io](https://geojson.io) to add in `xyz` raster tiles:
 ![geojson.io](https://user-images.githubusercontent.com/118112/89742168-624ffb80-da4c-11ea-9a9f-8a8e6ce786b0.gif)
 
 ---   
-
-## Use in a Mapbox or MapLibre Style
-
-Tiles for use in Mapbox GL or Mapbox GL Native for mobile, can easily be configured.  See the Mapbox [documentation](https://docs.mapbox.com/mapbox-gl-js/style-spec/sources/#raster) or MapLibre [documentation](https://maplibre.org/maplibre-gl-js-docs/example/map-tiles/) on details for how to add raster tiles to your style.
-
-### Mapbox Styles hosted as `https`
-
-You can also find several styles hosted by MapLibre.org.  See <https://github.com/maplibre/demotiles>.
-
-| style.json — selecting the style URL will copy <img width=200/> |
-| :-- |{% for data in site.data.styles %}
-| <input style="width: 150%" onclick="this.select(); document.execCommand('copy');" type='text' value='{{ data.style }}'/> | {% endfor %}
-
----
-
-*Example of XYZ rasters in iOS*
-
-<img src="https://user-images.githubusercontent.com/118112/135372760-578dfe9a-4688-4fb1-a69f-58f05de34225.gif" width="256px%">
 
 ### TileServer GL
 
@@ -87,3 +98,8 @@ From the QGIS [documentation](https://docs.qgis.org/3.10/en/docs/user_manual/man
 
 ![](https://docs.qgis.org/3.10/en/_images/xyz_tiles_dialog_osm.png)
 
+---
+
+*Example of XYZ rasters in iOS*
+
+<img src="https://user-images.githubusercontent.com/118112/135372760-578dfe9a-4688-4fb1-a69f-58f05de34225.gif" width="31.8%">
