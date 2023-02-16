@@ -20,71 +20,48 @@
     <tbody>
       <tr>
         <td style="text-align: left"><br /><img width="128px" alt="OpenStreetMap" src="https://tile.openstreetmap.org/9/89/206.png" /></td>
-        <td style="text-align: left"><code class="language-plaintext highlighter-rouge">https://tile.openstreetmap.org/{z}/{x}/{y}.png</code> <br /> <a href="https://operations.osmfoundation.org/policies/tiles/" target="_blank">OpenStreetMap</a></td>
+        <td style="text-align: left"><code class="language-plaintext highlighter-rouge">https://tile.openstreetmap.org/{z}/{x}/{y}.png</code> <br /> Style:  <a href="https://roblabs.com/xyz-raster-sources/styles/openstreetmap.json" target="_blank">https://roblabs.com/xyz-raster-sources/styles/openstreetmap.json</a> <br /> Usage &amp; License: <a href="https://operations.osmfoundation.org/policies/tiles/" target="_blank">OpenStreetMap</a></td>
       </tr>
       <tr>
         <td style="text-align: left"><br /><img width="128px" alt="Natural Earth Tiles" src="https://naturalearthtiles.roblabs.com/tiles/natural_earth_2.raster/2/0/1.png" /></td>
-        <td style="text-align: left"><code class="language-plaintext highlighter-rouge">https://naturalearthtiles.roblabs.com/tiles/natural_earth_cross_blended_hypso_shaded_relief.raster/{z}/{x}/{y}.png</code> <br /> <a href="https://github.com/lukasmartinelli/naturalearthtiles#license" target="_blank">Natural Earth Tiles</a></td>
+        <td style="text-align: left"><code class="language-plaintext highlighter-rouge">https://naturalearthtiles.roblabs.com/tiles/natural_earth_cross_blended_hypso_shaded_relief.raster/{z}/{x}/{y}.png</code> <br /> Style:  <a href="https://roblabs.com/xyz-raster-sources/styles/naturalearthtiles.json" target="_blank">https://roblabs.com/xyz-raster-sources/styles/naturalearthtiles.json</a> <br /> Usage &amp; License: <a href="https://github.com/lukasmartinelli/naturalearthtiles#license" target="_blank">Natural Earth Tiles</a></td>
       </tr>
       <tr>
         <td style="text-align: left"><br /><img width="128px" alt="Stamen watercolor" src="https://stamen-tiles.a.ssl.fastly.net/watercolor/9/89/206.jpg" /></td>
-        <td style="text-align: left"><code class="language-plaintext highlighter-rouge">https://stamen-tiles.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg</code> <br /> <a href="http://maps.stamen.com/#watercolor/11/32.7134/-117.2059" target="_blank">Stamen watercolor</a></td>
+        <td style="text-align: left"><code class="language-plaintext highlighter-rouge">https://stamen-tiles.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg</code> <br /> Style:  <a href="https://roblabs.com/xyz-raster-sources/styles/stamen-multi-rasters.json" target="_blank">https://roblabs.com/xyz-raster-sources/styles/stamen-multi-rasters.json</a> <br /> Usage &amp; License: <a href="http://maps.stamen.com/#watercolor/11/32.7134/-117.2059" target="_blank">Stamen watercolor</a></td>
       </tr>
       <tr>
         <td style="text-align: left"><br /><img width="128px" alt="Stamen terrain" src="https://stamen-tiles.a.ssl.fastly.net/terrain/9/89/206.jpg" /></td>
-        <td style="text-align: left"><code class="language-plaintext highlighter-rouge">https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg</code> <br /> <a href="http://maps.stamen.com/#terrain/11/32.7134/-117.2059" target="_blank">Stamen terrain</a></td>
+        <td style="text-align: left"><code class="language-plaintext highlighter-rouge">https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg</code> <br /> Style:  <a href="https://roblabs.com/xyz-raster-sources/styles/stamen-multi-rasters.json" target="_blank">https://roblabs.com/xyz-raster-sources/styles/stamen-multi-rasters.json</a> <br /> Usage &amp; License: <a href="http://maps.stamen.com/#terrain/11/32.7134/-117.2059" target="_blank">Stamen terrain</a></td>
       </tr>
       <tr>
         <td style="text-align: left"><br /><img width="128px" alt="Stamen toner" src="https://stamen-tiles.a.ssl.fastly.net/toner/9/89/206.png" /></td>
-        <td style="text-align: left"><code class="language-plaintext highlighter-rouge">https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png</code> <br /> <a href="http://maps.stamen.com/#toner/11/32.7134/-117.2059" target="_blank">Stamen toner</a></td>
+        <td style="text-align: left"><code class="language-plaintext highlighter-rouge">https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png</code> <br /> Style:  <a href="https://roblabs.com/xyz-raster-sources/styles/stamen-multi-rasters.json" target="_blank">https://roblabs.com/xyz-raster-sources/styles/stamen-multi-rasters.json</a> <br /> Usage &amp; License: <a href="http://maps.stamen.com/#toner/11/32.7134/-117.2059" target="_blank">Stamen toner</a></td>
       </tr>
       <tr>
         <td style="text-align: left"><br /><img width="128px" alt="ArcGIS World Imagery" src="https://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/9/206/89" /></td>
-        <td style="text-align: left"><code class="language-plaintext highlighter-rouge">https://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}</code> <br /> <a href="https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer" target="_blank">ArcGIS World Imagery</a></td>
+        <td style="text-align: left"><code class="language-plaintext highlighter-rouge">https://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}</code> <br /> Style:  <a href="https://roblabs.com/xyz-raster-sources/styles/arcgis-world-imagery.json" target="_blank">https://roblabs.com/xyz-raster-sources/styles/arcgis-world-imagery.json</a> <br /> Usage &amp; License: <a href="https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer" target="_blank">ArcGIS World Imagery</a></td>
       </tr>
       <tr>
         <td style="text-align: left"><br /><img width="128px" alt="USDA NAIP" src="https://gis.apfo.usda.gov/arcgis/rest/services/NAIP/USDA_CONUS_PRIME/ImageServer/tile/9/206/89" /></td>
-        <td style="text-align: left"><code class="language-plaintext highlighter-rouge">https://gis.apfo.usda.gov/arcgis/rest/services/NAIP/USDA_CONUS_PRIME/ImageServer/tile/{z}/{y}/{x}</code> <br /> <a href="https://gis.apfo.usda.gov/arcgis/rest/services/NAIP/USDA_CONUS_PRIME/ImageServer" target="_blank">USDA NAIP</a></td>
-      </tr>
-      <tr>
-        <td style="text-align: left"><br /><img width="128px" alt="PortlandMaps.com" src="https://user-images.githubusercontent.com/118112/161826591-7519f5bd-1434-447f-b47b-709cb45431ed.gif" /></td>
-        <td style="text-align: left"><code class="language-plaintext highlighter-rouge">https://www.portlandmaps.com/arcgis/rest/services/Public/Aerial_Photos_Summer_2021/MapServer/tile/{z}/{y}/{x}</code> <br /> <a href="https://www.portlandmaps.com/arcgis/rest/services/Public" target="_blank">PortlandMaps.com</a></td>
+        <td style="text-align: left"><code class="language-plaintext highlighter-rouge">https://gis.apfo.usda.gov/arcgis/rest/services/NAIP/USDA_CONUS_PRIME/ImageServer/tile/{z}/{y}/{x}</code> <br /> Style:  <a href="https://roblabs.com/xyz-raster-sources/styles/usda-naip.json" target="_blank">https://roblabs.com/xyz-raster-sources/styles/usda-naip.json</a> <br /> Usage &amp; License: <a href="https://gis.apfo.usda.gov/arcgis/rest/services/NAIP/USDA_CONUS_PRIME/ImageServer" target="_blank">USDA NAIP</a></td>
       </tr>
     </tbody>
   </table>
+
+  <hr />
 
   <h2 id="use-in-a-mapbox-or-maplibre-style">Use in a Mapbox or MapLibre Style</h2>
 
   <p>Tiles for use in Mapbox GL or Mapbox GL Native for mobile, can easily be configured.  See the Mapbox <a href="https://docs.mapbox.com/mapbox-gl-js/style-spec/sources/#raster">documentation</a> or MapLibre <a href="https://maplibre.org/maplibre-gl-js-docs/example/map-tiles/">documentation</a> on details for how to add raster tiles to your style.</p>
 
-  <h3 id="mapbox-styles-hosted-as-https">Mapbox Styles hosted as <code class="language-plaintext highlighter-rouge">https</code></h3>
-
   <p>You can also find several styles hosted by MapLibre.org.  See <a href="https://github.com/maplibre/demotiles">https://github.com/maplibre/demotiles</a>.</p>
 
-  <table>
-    <thead>
-      <tr>
-        <th style="text-align: left">style.json <img width="200" /></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="text-align: left"><a href="https://roblabs.com/xyz-raster-sources/styles/arcgis-world-imagery.json">https://roblabs.com/xyz-raster-sources/styles/arcgis-world-imagery.json</a></td>
-      </tr>
-      <tr>
-        <td style="text-align: left"><a href="https://roblabs.com/xyz-raster-sources/styles/naturalearthtiles.json">https://roblabs.com/xyz-raster-sources/styles/naturalearthtiles.json</a></td>
-      </tr>
-      <tr>
-        <td style="text-align: left"><a href="https://roblabs.com/xyz-raster-sources/styles/openstreetmap.json">https://roblabs.com/xyz-raster-sources/styles/openstreetmap.json</a></td>
-      </tr>
-      <tr>
-        <td style="text-align: left"><a href="https://roblabs.com/xyz-raster-sources/styles/stamen-multi-rasters.json">https://roblabs.com/xyz-raster-sources/styles/stamen-multi-rasters.json</a></td>
-      </tr>
-      <tr>
-        <td style="text-align: left"><a href="https://roblabs.com/xyz-raster-sources/styles/usda-naip.json">https://roblabs.com/xyz-raster-sources/styles/usda-naip.json</a></td>
-      </tr>
-    </tbody>
-  </table>
+  <hr />
+
+  <h2 id="use-in-tilejsonio">Use in TileJSON.io</h2>
+
+  <p><a href="https://www.azavea.com/blog/2019/03/04/introducing-tilejson-io">https://www.azavea.com/blog/2019/03/04/introducing-tilejson-io</a></p>
 
   <hr />
 
@@ -92,10 +69,12 @@
 
   <p>See examples of several <code class="language-plaintext highlighter-rouge">style.json</code> in <a href="https://codepen.io/roblabs/pen/JjXXMLz">CodePen.io</a>.</p>
 
+  <hr />
+
   <h2 id="use-in-geojsonio">Use in geojson.io</h2>
 
   <blockquote>
-    <p><em><a href="https://geojson.io">geojson.io</a> is a quick, simple tool for creating, viewing, and sharing maps.</em></p>
+    <p><em>geojson.io is a quick, simple tool for creating, viewing, and sharing maps.</em></p>
   </blockquote>
 
   <p>You can use <a href="https://geojson.io">geojson.io</a> to add in <code class="language-plaintext highlighter-rouge">xyz</code> raster tiles:</p>
@@ -114,24 +93,6 @@
 
   <hr />
 
-  <h3 id="tileserver-gl">TileServer GL</h3>
-
-  <p>You can inspect <em>“Vector and raster maps with GL styles”</em> before they are installed onto production or  mobile by using <a href="https://maptiler-tileserver.readthedocs.io">TileServer GL</a>.</p>
-
-  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Create a short alias for TileServer GL</span>
-<span class="nb">alias </span><span class="nv">tsgl</span><span class="o">=</span><span class="s2">"docker run --rm -it -v </span><span class="si">$(</span><span class="nb">pwd</span><span class="si">)</span><span class="s2">:/data -p 8080:8080 maptiler/tileserver-gl"</span>
-tsgl <span class="nt">-v</span>
-tsgl <span class="nt">-h</span>
-</code></pre></div>  </div>
-
-  <hr />
-
-  <h2 id="use-in-tilejsonio">Use in TileJSON.io</h2>
-
-  <p><a href="https://www.azavea.com/blog/2019/03/04/introducing-tilejson-io">https://www.azavea.com/blog/2019/03/04/introducing-tilejson-io</a></p>
-
-  <hr />
-
   <h2 id="use-in-qgis">Use in QGIS</h2>
 
   <p>This tiles can easily be pulled into QGIS.</p>
@@ -144,6 +105,17 @@ tsgl <span class="nt">-h</span>
 
   <p><img src="https://docs.qgis.org/3.10/en/_images/xyz_tiles_dialog_osm.png" alt="" /></p>
 
+  <hr />
+
+  <h3 id="tileserver-gl">TileServer GL</h3>
+
+  <p>You can inspect <em>“Vector and raster maps with GL styles”</em> before they are installed onto production or  mobile by using <a href="https://maptiler-tileserver.readthedocs.io">TileServer GL</a>.</p>
+
+  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Create a short alias for TileServer GL</span>
+<span class="nb">alias </span><span class="nv">tsgl</span><span class="o">=</span><span class="s2">"docker run --rm -it -v </span><span class="si">$(</span><span class="nb">pwd</span><span class="si">)</span><span class="s2">:/data -p 8080:8080 maptiler/tileserver-gl"</span>
+tsgl <span class="nt">-v</span>
+tsgl <span class="nt">-h</span>
+</code></pre></div>  </div>
   <hr />
 
   <p><em>Example of XYZ rasters in iOS</em></p>
