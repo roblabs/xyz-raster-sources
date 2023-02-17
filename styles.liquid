@@ -1,0 +1,40 @@
+---
+# How to:  have a liquid generated index page for GH-Pages, and
+#          maintain a static readme page for GitHub.com
+# file:  readme.liquid.md
+#   1.  Reads in the contents of index.md
+#   2.  liquid formatting is applied to index.md
+#   3.  Based on the [Front matter defaults](https://jekyllrb.com/docs/configuration/front-matter-defaults/)
+#       This file is rendered as _site/readme.md
+#       see _config.yml
+#   4.  Review _site/readme.md , and post it on GitHub as readme.md
+#   5.  cp tmp/_site/www/readme.md .
+#       code tmp/_site/www/styles.json
+#       cat tmp/_site/www/styles.json | json -0
+permalink: styles.json
+---
+
+{% if jekyll.environment == "development" %}
+[{% for source in site.data.sources %}{
+  "version": 8,
+  "name": "{{ source.name }}",
+  "pitch": 0,
+  "bearing": 0,
+  "zoom": 7,
+  "center": [-117.3, 32.6],
+  "sources": {
+    "{{ source.name }}": { "type": "raster", 
+      "tiles": [ "{{ source.xyz }}" ]
+    }
+  },
+  "id": "{{ source.name }}",
+    "layers": [
+    {
+      "id": "{{ source.name }}",
+      "type": "raster",
+      "source": "{{ source.name }}",
+      "layout": { "visibility": "visible" }
+    }
+  ]
+},
+{% endfor %}] {% endif %}

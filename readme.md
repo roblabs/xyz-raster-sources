@@ -53,7 +53,7 @@
 
   <h2 id="use-in-a-mapbox-or-maplibre-style">Use in a Mapbox or MapLibre Style</h2>
 
-  <p>Tiles for use in Mapbox GL or Mapbox GL Native for mobile, can easily be configured.  See the Mapbox <a href="https://docs.mapbox.com/mapbox-gl-js/style-spec/sources/#raster">documentation</a> or MapLibre <a href="https://maplibre.org/maplibre-gl-js-docs/example/map-tiles/">documentation</a> on details for how to add raster tiles to your style.</p>
+  <p>Tiles for use in Mapbox or MapLibre for mobile or web applications, can easily be configured.  See the Mapbox <a href="https://docs.mapbox.com/mapbox-gl-js/style-spec/sources/#raster">documentation</a> or MapLibre <a href="https://maplibre.org/maplibre-gl-js-docs/example/map-tiles/">documentation</a> on details for how to add raster tiles to your style.</p>
 
   <p>You can also find several styles hosted by MapLibre.org.  See <a href="https://github.com/maplibre/demotiles">https://github.com/maplibre/demotiles</a>.</p>
 

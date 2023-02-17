@@ -2,6 +2,19 @@
 
 ---
 
+<!--
+// https://jekyllrb.com/docs/configuration/environments/
+jekyll.environment: {{ jekyll.environment }}
+jekyll.version: {{ jekyll.version }}
+
+TEST
+
+* [index.md](https://RobLabs.com/xyz)
+* [index.md](https://RobLabs.com/xyz-raster-sources)
+* [readme.md](https://github.com/roblabs/xyz-raster-sources)
+
+ -->
+
 [<img src="https://avatars.githubusercontent.com/u/118112" style="border-radius:4px" width="20" />](https://roblabs.com)
 [![GitHub Repo Source](https://img.shields.io/github/stars/{{ site.repository }}?label=Source&style=social)](https://github.com/{{ site.repository }})
 ![GitHub](https://img.shields.io/github/license/{{ site.repository }})
@@ -30,7 +43,7 @@ Created by [RobLabs.com](https://roblabs.com) in Summer 2020 for use in producti
 
 ## Use in a Mapbox or MapLibre Style
 
-Tiles for use in Mapbox GL or Mapbox GL Native for mobile, can easily be configured.  See the Mapbox [documentation](https://docs.mapbox.com/mapbox-gl-js/style-spec/sources/#raster) or MapLibre [documentation](https://maplibre.org/maplibre-gl-js-docs/example/map-tiles/) on details for how to add raster tiles to your style.
+Tiles for use in Mapbox or MapLibre for mobile or web applications, can easily be configured.  See the Mapbox [documentation](https://docs.mapbox.com/mapbox-gl-js/style-spec/sources/#raster) or MapLibre [documentation](https://maplibre.org/maplibre-gl-js-docs/example/map-tiles/) on details for how to add raster tiles to your style.
 
 You can also find several styles hosted by MapLibre.org.  See <https://github.com/maplibre/demotiles>.
 

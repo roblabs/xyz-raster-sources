@@ -9,6 +9,20 @@
 #       see _config.yml
 #   4.  Review _site/readme.md , and post it on GitHub as readme.md
 #   5.  cp tmp/_site/www/readme.md .
+
+# wget --spider https://roblabs.com/xyz-raster-sources/readme.liquid.md
+# 404 Not Found Remote file does not exist -- broken link!!!
+
+# wget --spider https://roblabs.com/xyz-raster-sources/readme.liquid.md.html
+# 404 Not Found Remote file does not exist -- broken link!!!
+
+# wget --spider https://roblabs.com/xyz-raster-sources/readme.md
+# Remote file exists.
+
+# wget --spider https://roblabs.com/xyz-raster-sources/index.html
+# Remote file exists.
+
+permalink: readme.md
 ---
 
 {% if jekyll.environment == "development" %}
