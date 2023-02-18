@@ -1,26 +1,27 @@
 {
   "version": 8,
-  "name": "arcgis-world-imagery",
-  "metadata": {},
-  "center": [-117.3, 32.6],
-  "zoom": 7,
-  "bearing": 0,
+  "name": "ArcGIS World Imagery",
   "pitch": 0,
+  "bearing": 0,
+  "zoom": 7,
+  "center": [-117.3, 32.6],
   "sources": {
-    "satellite": {"tiles": ["https://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"],
-    "type": "raster"}
+    "arcgis-world-imagery": {
+      "type": "raster",
+      "tiles": [
+        "https://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+      ]
+    }
   },
+  "id": "0x_arcgis-world-imagery",
   "layers": [
     {
-      "id": "background",
-      "type": "background",
-      "layout": {"visibility": "visible"}
-    },
-    {
-      "id": "satellite",
+      "id": "layerId_ArcGIS World Imagery",
       "type": "raster",
-      "source": "satellite",
-      "layout": {"visibility": "visible"}
+      "source": "arcgis-world-imagery",
+      "layout": {
+        "visibility": "visible"
+      }
     }
   ]
 }

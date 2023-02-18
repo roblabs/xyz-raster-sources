@@ -8,33 +8,48 @@
 #       This file is rendered as _site/readme.md
 #       see _config.yml
 #   4.  Review _site/readme.md , and post it on GitHub as readme.md
-#   5.  cp tmp/_site/www/readme.md .
-#       code tmp/_site/www/styles.json
-#       cat tmp/_site/www/styles.json | json -0
+#   5.  Useful shell commands below 
 permalink: styles.json
 ---
+{% comment %} 
+# Copy generated file
+cp tmp/_site/www/readme.md .
 
+# open in VSC
+code tmp/_site/www/styles.json
+
+# Take the last element in the JSON array
+cat tmp/_site/www/styles.json | json -- -1
+
+# minify the last element
+cat tmp/_site/www/styles.json | json -- -1 | json -0
+
+# output the id, for use with output filename
+cat tmp/_site/www/styles.json | json -- -1 | json id
+
+# output the 6th element of the array
+cat tmp/_site/www/styles.json | json -- 6 | prettier --parser=json 
+{% endcomment %}
 {% if jekyll.environment == "development" %}
-[{% for source in site.data.sources %}{
+[{% for source in site.data.sources %}
+    {%- if forloop.length > 0 -%}       {% capture name%}{{ source.name | downcase | split: " "  | join: "-" }}{% endcapture %}
+{
   "version": 8,
   "name": "{{ source.name }}",
   "pitch": 0,
   "bearing": 0,
   "zoom": 7,
   "center": [-117.3, 32.6],
-  "sources": {
-    "{{ source.name }}": { "type": "raster", 
-      "tiles": [ "{{ source.xyz }}" ]
-    }
+  "sources": { "{{ name }}": { "type": "raster", 
+      "tiles": [ "{{ source.xyz }}" ]   }
   },
-  "id": "{{ source.name }}",
-    "layers": [
-    {
-      "id": "{{ source.name }}",
+  "id": "0x_{{name}}",
+  "layers": [{
+      "id": "layerId_{{ source.name }}",
       "type": "raster",
-      "source": "{{ source.name }}",
+      "source": "{{ name }}",
       "layout": { "visibility": "visible" }
-    }
-  ]
-},
+   }]
+}{% unless forloop.last %},{% endunless -%} {% comment %} append a `,` comman delimiter in the array {% endcomment %}
+    {% endif %}
 {% endfor %}] {% endif %}

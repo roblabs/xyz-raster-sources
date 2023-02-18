@@ -1,28 +1,27 @@
 {
   "version": 8,
-  "name": "usda-naip",
-  "metadata": {},
-  "center": [-117.3, 32.6],
-  "zoom": 7,
-  "bearing": 0,
+  "name": "USDA NAIP",
   "pitch": 0,
+  "bearing": 0,
+  "zoom": 7,
+  "center": [-117.3, 32.6],
   "sources": {
-    "raster": {
-      "tiles": ["https://gis.apfo.usda.gov/arcgis/rest/services/NAIP/USDA_CONUS_PRIME/ImageServer/tile/{z}/{y}/{x}"],
-      "type": "raster"
+    "usda-naip": {
+      "type": "raster",
+      "tiles": [
+        "https://gis.apfo.usda.gov/arcgis/rest/services/NAIP/USDA_CONUS_PRIME/ImageServer/tile/{z}/{y}/{x}"
+      ]
     }
   },
+  "id": "0x_usda-naip",
   "layers": [
     {
-      "id": "background",
-      "type": "background",
-      "layout": {"visibility": "visible"}
-    },
-    {
-      "id": "raster",
+      "id": "layerId_USDA NAIP",
       "type": "raster",
-      "source": "raster",
-      "layout": {"visibility": "visible"}
+      "source": "usda-naip",
+      "layout": {
+        "visibility": "visible"
+      }
     }
   ]
 }

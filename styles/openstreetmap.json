@@ -1,28 +1,25 @@
 {
   "version": 8,
-  "name": "openstreetmap",
-  "metadata": {},
-  "center": [-117.3, 32.6],
-  "zoom": 7,
-  "bearing": 0,
+  "name": "OpenStreetMap",
   "pitch": 0,
+  "bearing": 0,
+  "zoom": 7,
+  "center": [-117.3, 32.6],
   "sources": {
-    "raster": {
-      "tiles": ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
-      "type": "raster"
+    "openstreetmap": {
+      "type": "raster",
+      "tiles": ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"]
     }
   },
+  "id": "0x_openstreetmap",
   "layers": [
     {
-      "id": "background",
-      "type": "background",
-      "layout": {"visibility": "visible"}
-    },
-    {
-      "id": "raster",
+      "id": "layerId_OpenStreetMap",
       "type": "raster",
-      "source": "raster",
-      "layout": {"visibility": "visible"}
+      "source": "openstreetmap",
+      "layout": {
+        "visibility": "visible"
+      }
     }
   ]
 }

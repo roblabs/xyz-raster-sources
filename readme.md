@@ -24,7 +24,7 @@
       </tr>
       <tr>
         <td style="text-align: left"><br /><img width="128px" alt="Natural Earth Tiles" src="https://naturalearthtiles.roblabs.com/tiles/natural_earth_2.raster/2/0/1.png" /></td>
-        <td style="text-align: left"><code class="language-plaintext highlighter-rouge">https://naturalearthtiles.roblabs.com/tiles/natural_earth_cross_blended_hypso_shaded_relief.raster/{z}/{x}/{y}.png</code> <br /> Style:  <a href="https://roblabs.com/xyz-raster-sources/styles/naturalearthtiles.json" target="_blank">https://roblabs.com/xyz-raster-sources/styles/naturalearthtiles.json</a> <br /> Usage &amp; License: <a href="https://github.com/lukasmartinelli/naturalearthtiles#license" target="_blank">Natural Earth Tiles</a></td>
+        <td style="text-align: left"><code class="language-plaintext highlighter-rouge">https://naturalearthtiles.roblabs.com/tiles/natural_earth_cross_blended_hypso_shaded_relief.raster/{z}/{x}/{y}.png</code> <br /> Style:  <a href="https://roblabs.com/xyz-raster-sources/styles/natural-earth-tiles.json" target="_blank">https://roblabs.com/xyz-raster-sources/styles/natural-earth-tiles.json</a> <br /> Usage &amp; License: <a href="https://github.com/lukasmartinelli/naturalearthtiles#license" target="_blank">Natural Earth Tiles</a></td>
       </tr>
       <tr>
         <td style="text-align: left"><br /><img width="128px" alt="Stamen watercolor" src="https://stamen-tiles.a.ssl.fastly.net/watercolor/9/89/206.jpg" /></td>
@@ -53,9 +53,11 @@
 
   <h2 id="use-in-a-mapbox-or-maplibre-style">Use in a Mapbox or MapLibre Style</h2>
 
-  <p>Tiles for use in Mapbox or MapLibre for mobile or web applications, can easily be configured.  See the Mapbox <a href="https://docs.mapbox.com/mapbox-gl-js/style-spec/sources/#raster">documentation</a> or MapLibre <a href="https://maplibre.org/maplibre-gl-js-docs/example/map-tiles/">documentation</a> on details for how to add raster tiles to your style.</p>
+  <p>Tiles for use in Mapbox or MapLibre for mobile or web applications, can easily be configured.  See the <a href="styles" target="blank">styles</a> directory for sample style JSON.</p>
 
   <p>You can also find several styles hosted by MapLibre.org.  See <a href="https://github.com/maplibre/demotiles">https://github.com/maplibre/demotiles</a>.</p>
+
+  <p>See the Mapbox <a href="https://docs.mapbox.com/mapbox-gl-js/style-spec/sources/#raster">documentation</a> or MapLibre <a href="https://maplibre.org/maplibre-gl-js-docs/example/map-tiles/">documentation</a> on details for how to add raster tiles to your style.</p>
 
   <hr />
 

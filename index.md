@@ -43,9 +43,11 @@ Created by [RobLabs.com](https://roblabs.com) in Summer 2020 for use in producti
 
 ## Use in a Mapbox or MapLibre Style
 
-Tiles for use in Mapbox or MapLibre for mobile or web applications, can easily be configured.  See the Mapbox [documentation](https://docs.mapbox.com/mapbox-gl-js/style-spec/sources/#raster) or MapLibre [documentation](https://maplibre.org/maplibre-gl-js-docs/example/map-tiles/) on details for how to add raster tiles to your style.
+Tiles for use in Mapbox or MapLibre for mobile or web applications, can easily be configured.  See the [styles](styles){:target="blank"} directory for sample style JSON.
 
 You can also find several styles hosted by MapLibre.org.  See <https://github.com/maplibre/demotiles>.
+
+See the Mapbox [documentation](https://docs.mapbox.com/mapbox-gl-js/style-spec/sources/#raster) or MapLibre [documentation](https://maplibre.org/maplibre-gl-js-docs/example/map-tiles/) on details for how to add raster tiles to your style.
 
 ---
 

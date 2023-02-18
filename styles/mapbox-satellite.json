@@ -9,18 +9,18 @@
   "sprite": "",
   "glyphs": "",
   "sources": {
-    "satellite": {"url": "mapbox://mapbox.satellite", "type": "raster"}
+    "mapbox://mapbox.satellite": { "type": "raster",
+      "url": "mapbox://mapbox.satellite"
+    },
+    "mapbox256": {"type": "raster",
+      "tiles": ["https://api.mapbox.com/styles/v1/mapbox/satellite-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyXXX"]
+    }
   },
   "layers": [
     {
-      "id": "background",
-      "type": "background",
-      "layout": {"visibility": "visible"}
-    },
-    {
       "id": "satellite",
       "type": "raster",
-      "source": "satellite",
+      "source": "mapbox://mapbox.satellite",
       "layout": {"visibility": "visible"}
     }
   ]
