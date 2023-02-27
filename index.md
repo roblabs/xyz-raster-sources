@@ -131,6 +131,8 @@ func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayR
 
 See the details for MapKit JS: <https://developer.apple.com/documentation/mapkitjs/tileoverlay>
 
+See a live demo of MapKit JS with an OpenStreetMap tile overlay: <https://roblabs.com/projects/mapkitjs/Tile-Overlay>.
+
 ```JavaScript
 var map = new mapkit.Map("map");
 
