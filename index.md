@@ -51,7 +51,7 @@ See the Mapbox [documentation](https://docs.mapbox.com/mapbox-gl-js/style-spec/s
 
 ---
 
-## Use in TileJSON.io
+## TileJSON.io
 
 <https://www.azavea.com/blog/2019/03/04/introducing-tilejson-io>
 
@@ -63,7 +63,7 @@ See examples of several `style.json` in [CodePen.io](https://codepen.io/roblabs/
 
 ---
 
-## Use in geojson.io
+## GeoJSON.io
 
 > *geojson.io is a quick, simple tool for creating, viewing, and sharing maps.*
 
@@ -78,11 +78,9 @@ You can use [geojson.io](https://geojson.io) to add in `xyz` raster tiles:
 
 ---
 
-## Use in QGIS
+## QGIS
 
-This tiles can easily be pulled into QGIS.
-
-From the QGIS [documentation](https://docs.qgis.org/3.10/en/docs/user_manual/managing_data_source/opening_data.html#using-xyz-tile-services) site:  
+These tiles can easily be pulled into QGIS.  From the QGIS [documentation](https://docs.qgis.org/3.10/en/docs/user_manual/managing_data_source/opening_data.html#using-xyz-tile-services) site:  
 
 > You can add other services that use the XYZ Tile protocol by choosing New Connection in the XYZ Tiles context menu (right-click to open).
 
@@ -100,6 +98,56 @@ alias tsgl="docker run --rm -it -v $(pwd):/data -p 8080:8080 maptiler/tileserver
 tsgl -v
 tsgl -h
 ```
+---
+
+### MapKit with `TileOverlay`
+
+#### Swift
+
+See the details for iOS & tvOS at <https://developer.apple.com/documentation/mapkit/mktileoverlay>.
+
+```Swift
+// coordinate the loading and management of the tiles
+// https://developer.apple.com/documentation/mapkit/mktileoverlay
+let urlTemplate = "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+let overlay = MKTileOverlay(urlTemplate: urlTemplate)
+overlay.canReplaceMapContent = true
+overlay.minimumZ = 8
+overlay.maximumZ = 19
+overlay.tileSize = CGSize(width: 256, height: 256)
+
+// handle the actual drawing of the tiles on the map
+// https://developer.apple.com/documentation/mapkit/mktileoverlayrenderer
+func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+    if overlay is MKTileOverlay {
+        let renderer = MKTileOverlayRenderer(overlay:overlay)
+        return renderer
+    }
+    return MKTileOverlayRenderer(tileOverlay: overlay as! MKTileOverlay)
+}
+```
+
+#### JavaScript
+
+See the details for MapKit JS: <https://developer.apple.com/documentation/mapkitjs/tileoverlay>
+
+```JavaScript
+var map = new mapkit.Map("map");
+
+// https://developer.apple.com/documentation/mapkitjs/mapkit/tileoverlay/2974035-mapkit_tileoverlay
+const openstreetmap = "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+var customOverlay = new mapkit.TileOverlay(openstreetmap);
+
+// https://developer.apple.com/documentation/mapkitjs/tileoverlayconstructoroptions
+customOverlay.minimumZ = 2;
+customOverlay.maximumZ = 16;
+customOverlay.opacity = 1.0;
+customOverlay.data = {
+    lang: mapkit.language
+};
+map.addTileOverlay(customOverlay);
+```
+
 ---
 
 *Example of XYZ rasters in iOS*

@@ -1,4 +1,17 @@
-<p><a href="https://roblabs.com"><img src="https://avatars.githubusercontent.com/u/118112" style="border-radius:4px" width="20" /></a>
+<!--
+// https://jekyllrb.com/docs/configuration/environments/
+jekyll.environment: development
+jekyll.version: 3.9.3
+
+TEST
+
+* [index.md](https://RobLabs.com/xyz)
+* [index.md](https://RobLabs.com/xyz-raster-sources)
+* [readme.md](https://github.com/roblabs/xyz-raster-sources)
+
+ -->
+
+  <p><a href="https://roblabs.com"><img src="https://avatars.githubusercontent.com/u/118112" style="border-radius:4px" width="20" /></a>
 <a href="https://github.com/roblabs/xyz-raster-sources"><img src="https://img.shields.io/github/stars/roblabs/xyz-raster-sources?label=Source&amp;style=social" alt="GitHub Repo Source" /></a>
 <img src="https://img.shields.io/github/license/roblabs/xyz-raster-sources" alt="GitHub" /></p>
 
@@ -24,7 +37,7 @@
       </tr>
       <tr>
         <td style="text-align: left"><br /><img width="128px" alt="Natural Earth Tiles" src="https://naturalearthtiles.roblabs.com/tiles/natural_earth_2.raster/2/0/1.png" /></td>
-        <td style="text-align: left"><code class="language-plaintext highlighter-rouge">https://naturalearthtiles.roblabs.com/tiles/natural_earth_cross_blended_hypso_shaded_relief.raster/{z}/{x}/{y}.png</code> <br /> Style:  <a href="https://roblabs.com/xyz-raster-sources/styles/natural-earth-tiles.json" target="_blank">https://roblabs.com/xyz-raster-sources/styles/natural-earth-tiles.json</a> <br /> Usage &amp; License: <a href="https://github.com/lukasmartinelli/naturalearthtiles#license" target="_blank">Natural Earth Tiles</a></td>
+        <td style="text-align: left"><code class="language-plaintext highlighter-rouge">https://naturalearthtiles.roblabs.com/tiles/natural_earth_cross_blended_hypso_shaded_relief.raster/{z}/{x}/{y}.png</code> <br /> Style:  <a href="https://roblabs.com/xyz-raster-sources/styles/naturalearthtiles.json" target="_blank">https://roblabs.com/xyz-raster-sources/styles/naturalearthtiles.json</a> <br /> Usage &amp; License: <a href="https://github.com/lukasmartinelli/naturalearthtiles#license" target="_blank">Natural Earth Tiles</a></td>
       </tr>
       <tr>
         <td style="text-align: left"><br /><img width="128px" alt="Stamen watercolor" src="https://stamen-tiles.a.ssl.fastly.net/watercolor/9/89/206.jpg" /></td>
@@ -61,7 +74,7 @@
 
   <hr />
 
-  <h2 id="use-in-tilejsonio">Use in TileJSON.io</h2>
+  <h2 id="tilejsonio">TileJSON.io</h2>
 
   <p><a href="https://www.azavea.com/blog/2019/03/04/introducing-tilejson-io">https://www.azavea.com/blog/2019/03/04/introducing-tilejson-io</a></p>
 
@@ -73,7 +86,7 @@
 
   <hr />
 
-  <h2 id="use-in-geojsonio">Use in geojson.io</h2>
+  <h2 id="geojsonio">GeoJSON.io</h2>
 
   <blockquote>
     <p><em>geojson.io is a quick, simple tool for creating, viewing, and sharing maps.</em></p>
@@ -95,11 +108,9 @@
 
   <hr />
 
-  <h2 id="use-in-qgis">Use in QGIS</h2>
+  <h2 id="qgis">QGIS</h2>
 
-  <p>This tiles can easily be pulled into QGIS.</p>
-
-  <p>From the QGIS <a href="https://docs.qgis.org/3.10/en/docs/user_manual/managing_data_source/opening_data.html#using-xyz-tile-services">documentation</a> site:</p>
+  <p>These tiles can easily be pulled into QGIS.  From the QGIS <a href="https://docs.qgis.org/3.10/en/docs/user_manual/managing_data_source/opening_data.html#using-xyz-tile-services">documentation</a> site:</p>
 
   <blockquote>
     <p>You can add other services that use the XYZ Tile protocol by choosing New Connection in the XYZ Tiles context menu (right-click to open).</p>
@@ -120,6 +131,56 @@ tsgl <span class="nt">-h</span>
 </code></pre></div>  </div>
   <hr />
 
+  <h3 id="mapkit-with-tileoverlay">MapKit with <code class="language-plaintext highlighter-rouge">TileOverlay</code></h3>
+
+  <h4 id="swift">Swift</h4>
+
+  <p>See the details for iOS &amp; tvOS at <a href="https://developer.apple.com/documentation/mapkit/mktileoverlay">https://developer.apple.com/documentation/mapkit/mktileoverlay</a>.</p>
+
+  <pre><code class="language-Swift">// coordinate the loading and management of the tiles
+// https://developer.apple.com/documentation/mapkit/mktileoverlay
+let urlTemplate = "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+let overlay = MKTileOverlay(urlTemplate: urlTemplate)
+overlay.canReplaceMapContent = true
+overlay.minimumZ = 8
+overlay.maximumZ = 19
+overlay.tileSize = CGSize(width: 256, height: 256)
+
+// handle the actual drawing of the tiles on the map
+// https://developer.apple.com/documentation/mapkit/mktileoverlayrenderer
+func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -&gt; MKOverlayRenderer {
+    if overlay is MKTileOverlay {
+        let renderer = MKTileOverlayRenderer(overlay:overlay)
+        return renderer
+    }
+    return MKTileOverlayRenderer(tileOverlay: overlay as! MKTileOverlay)
+}
+</code></pre>
+
+  <h4 id="javascript">JavaScript</h4>
+
+  <p>See the details for MapKit JS: <a href="https://developer.apple.com/documentation/mapkitjs/tileoverlay">https://developer.apple.com/documentation/mapkitjs/tileoverlay</a></p>
+
+  <pre><code class="language-JavaScript">var map = new mapkit.Map("map");
+
+// https://developer.apple.com/documentation/mapkitjs/mapkit/tileoverlay/2974035-mapkit_tileoverlay
+const openstreetmap = "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+var customOverlay = new mapkit.TileOverlay(openstreetmap);
+
+// https://developer.apple.com/documentation/mapkitjs/tileoverlayconstructoroptions
+customOverlay.minimumZ = 2;
+customOverlay.maximumZ = 16;
+customOverlay.opacity = 1.0;
+customOverlay.data = {
+    lang: mapkit.language
+};
+map.addTileOverlay(customOverlay);
+</code></pre>
+
+  <hr />
+
   <p><em>Example of XYZ rasters in iOS</em></p>
 
   <p><img src="https://user-images.githubusercontent.com/118112/135372760-578dfe9a-4688-4fb1-a69f-58f05de34225.gif" width="31.8%" /></p>
+
+</div>
