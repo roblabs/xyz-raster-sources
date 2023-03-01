@@ -1,3 +1,5 @@
+clear
+
 bundle exec jekyll serve \
   --incremental \
   --host oldsanjuan.local \

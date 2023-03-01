@@ -1,25 +1,40 @@
 {
   "version": 8,
+  "metadata": "Made with liquid💦: RobLabs.com/xyz",
   "name": "OpenStreetMap",
-  "pitch": 0,
   "bearing": 0,
-  "zoom": 7,
-  "center": [-117.3, 32.6],
+  "pitch": 0,
+  "zoom": 9,
+  "center": [-117.3, 32.6, 9],
   "sources": {
-    "openstreetmap": {
+    "imagery": {
+      "tilejson": "3.0.0",
+      "version": "1.0.0",
+      "name": "OpenStreetMap",
+      "description": "",
+      "attribution": "",
+      "bounds": [-180, -85.051129, 180, 85.051129],
+      "center": [-117.3, 32.6, 9],
+      "minzoom": 0,
+      "maxzoom": 24,
+      "scheme": "xyz",
+      "volatile": false,
       "type": "raster",
+      "tileSize": 256,
       "tiles": ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"]
     }
   },
-  "id": "0x_openstreetmap",
+  "id": "OpenStreetMap",
   "layers": [
     {
-      "id": "layerId_OpenStreetMap",
+      "metadata": "",
+      "id": "OpenStreetMap",
+      "source": "imagery",
+      "minzoom": 0,
+      "maxzoom": 24,
       "type": "raster",
-      "source": "openstreetmap",
-      "layout": {
-        "visibility": "visible"
-      }
+      "raster-opacity": 1,
+      "layout": { "visibility": "visible" }
     }
   ]
 }

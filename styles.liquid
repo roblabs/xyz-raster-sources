@@ -12,29 +12,49 @@
 #       code tmp/_site/www/styles.json
 #       cat tmp/_site/www/styles.json | json -0
 permalink: styles.json
+# https://maplibre.org/maplibre-gl-js-docs/style-spec/layers
+# https://maplibre.org/maplibre-gl-js-docs/style-spec/sources/#raster
 ---
 
 {% if jekyll.environment == "development" %}
-[{% for source in site.data.sources %}{
+[{% for source in site.data.tile %}{
   "version": 8,
+  "metadata": "Made with liquid💦: RobLabs.com/xyz",
   "name": "{{ source.name }}",
-  "pitch": 0,
   "bearing": 0,
-  "zoom": 7,
-  "center": [-117.3, 32.6],
+  "pitch": 0,
+  "zoom": {% if source.center %}{{ source.center[2] }} {% else %} 0{% endif %},
+  "center": {% if source.center %} [{{ source.center | join: ", " }}]{% else %} [0,0]{% endif %},
   "sources": {
-    "{{ source.name }}": { "type": "raster", 
-      "tiles": [ "{{ source.xyz }}" ]
+    "imagery": { 
+      "tilejson": "3.0.0", 
+      "version": "1.0.0",
+      "name": "{{ source.name }}",
+      "description": "{{ source.description }}",
+      "attribution": {% if source.attribution %} "{{ source.attribution | join: ", " }}"  {% else %} ""{% endif %},
+      "bounds": {% if source.bounds %} [{{ source.bounds | join: ", " }}]{% else %} [-180, -85.051129, 180, 85.051129]{% endif %},
+      "center": {% if source.center %}[{{ source.center | join: ", " }}]{% else %} [0,0]{% endif %},
+      "minzoom": {% if source.minzoom %}{{ source.minzoom }} {% else %}  0{% endif %},
+      "maxzoom": {% if source.maxzoom %}{{ source.maxzoom }} {% else %} 24{% endif %},
+      "scheme": {% if source.scheme %} "{{ source.scheme }}" {% else %} "xyz"{% endif %},
+      "volatile": false,
+      "type": "raster",
+      "tileSize": {% if source.tileSize %}{{ source.tileSize }} {% else %} 512{% endif %},
+      "tiles": [ {% if source.esri %} "{{ source.esri }}/tile/{z}/{y}/{x}" {% else %} "{{ source.tiles }}" {% endif %}]
     }
   },
   "id": "{{ source.name }}",
     "layers": [
     {
+      "metadata": "",
       "id": "{{ source.name }}",
+      "source": "imagery",
+      "minzoom": {% if source.minzoom %}{{ source.minzoom }} {% else %}  0{% endif %},
+      "maxzoom": {% if source.maxzoom %}{{ source.maxzoom }} {% else %} 24{% endif %},
       "type": "raster",
-      "source": "{{ source.name }}",
+      "raster-opacity": 1,
       "layout": { "visibility": "visible" }
     }
   ]
 },
-{% endfor %}] {% endif %}
+{% endfor %}]{% endif %}

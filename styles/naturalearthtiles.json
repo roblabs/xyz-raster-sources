@@ -1,28 +1,42 @@
 {
   "version": 8,
-  "name": "naturalearthtiles",
-  "metadata": {},
-  "center": [-117.3, 32.6],
-  "zoom": 7,
+  "metadata": "Made with liquid💦: RobLabs.com/xyz",
+  "name": "Natural Earth Tiles",
   "bearing": 0,
   "pitch": 0,
+  "zoom": 2,
+  "center": [-117.3, 32.6, 2],
   "sources": {
-    "raster": {
-      "tiles": ["https://naturalearthtiles.roblabs.com/tiles/natural_earth_cross_blended_hypso_shaded_relief.raster/{z}/{x}/{y}.png"],
-      "type": "raster"
+    "imagery": {
+      "tilejson": "3.0.0",
+      "version": "1.0.0",
+      "name": "Natural Earth Tiles",
+      "description": "",
+      "attribution": "",
+      "bounds": [-180, -85.051129, 180, 85.051129],
+      "center": [-117.3, 32.6, 2],
+      "minzoom": 0,
+      "maxzoom": 24,
+      "scheme": "xyz",
+      "volatile": false,
+      "type": "raster",
+      "tileSize": 256,
+      "tiles": [
+        "https://naturalearthtiles.roblabs.com/tiles/natural_earth_cross_blended_hypso_shaded_relief.raster/{z}/{x}/{y}.png"
+      ]
     }
   },
+  "id": "Natural Earth Tiles",
   "layers": [
     {
-      "id": "background",
-      "type": "background",
-      "layout": {"visibility": "visible"}
-    },
-    {
-      "id": "raster",
+      "metadata": "",
+      "id": "Natural Earth Tiles",
+      "source": "imagery",
+      "minzoom": 0,
+      "maxzoom": 24,
       "type": "raster",
-      "source": "raster",
-      "layout": {"visibility": "visible"}
+      "raster-opacity": 1,
+      "layout": { "visibility": "visible" }
     }
   ]
 }

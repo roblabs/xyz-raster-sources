@@ -1,27 +1,42 @@
 {
   "version": 8,
+  "metadata": "Made with liquid💦: RobLabs.com/xyz",
   "name": "ArcGIS World Imagery",
-  "pitch": 0,
   "bearing": 0,
-  "zoom": 7,
-  "center": [-117.3, 32.6],
+  "pitch": 0,
+  "zoom": 9,
+  "center": [-117.3, 32.6, 9],
   "sources": {
-    "arcgis-world-imagery": {
+    "imagery": {
+      "tilejson": "3.0.0",
+      "version": "1.0.0",
+      "name": "ArcGIS World Imagery",
+      "description": "",
+      "attribution": "",
+      "bounds": [-180, -85.051129, 180, 85.051129],
+      "center": [-117.3, 32.6, 9],
+      "minzoom": 0,
+      "maxzoom": 24,
+      "scheme": "xyz",
+      "volatile": false,
       "type": "raster",
+      "tileSize": 256,
       "tiles": [
-        "https://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+        "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
       ]
     }
   },
-  "id": "0x_arcgis-world-imagery",
+  "id": "ArcGIS World Imagery",
   "layers": [
     {
-      "id": "layerId_ArcGIS World Imagery",
+      "metadata": "",
+      "id": "ArcGIS World Imagery",
+      "source": "imagery",
+      "minzoom": 0,
+      "maxzoom": 24,
       "type": "raster",
-      "source": "arcgis-world-imagery",
-      "layout": {
-        "visibility": "visible"
-      }
+      "raster-opacity": 1,
+      "layout": { "visibility": "visible" }
     }
   ]
 }

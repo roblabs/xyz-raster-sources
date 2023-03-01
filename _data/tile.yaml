@@ -1,0 +1,55 @@
+---
+- name: OpenStreetMap
+  center: [-117.3, 32.6, 9 ]
+  style: https://roblabs.com/xyz-raster-sources/styles/openstreetmap.json
+  sample: https://tile.openstreetmap.org/9/89/206.png
+  usage: https://operations.osmfoundation.org/policies/tiles/
+  tileSize: 256
+  tiles:
+    - https://tile.openstreetmap.org/{z}/{x}/{y}.png
+- name: Natural Earth Tiles
+  center: [-117.3, 32.6, 2 ]
+  style: https://roblabs.com/xyz-raster-sources/styles/naturalearthtiles.json
+  sample: https://naturalearthtiles.roblabs.com/tiles/natural_earth_2.raster/2/0/1.png
+  usage: https://github.com/lukasmartinelli/naturalearthtiles#license
+  tileSize: 256
+  tiles:
+    - https://naturalearthtiles.roblabs.com/tiles/natural_earth_cross_blended_hypso_shaded_relief.raster/{z}/{x}/{y}.png
+- name: Stamen watercolor
+  center: [-117.3, 32.6, 9 ]
+  style: https://roblabs.com/xyz-raster-sources/styles/stamen-multi-rasters.json
+  sample: https://stamen-tiles.a.ssl.fastly.net/watercolor/9/89/206.jpg
+  usage: http://maps.stamen.com/#watercolor/11/32.7134/-117.2059
+  tileSize: 256
+  tiles:
+    - https://stamen-tiles.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg
+- name: Stamen terrain
+  center: [-117.3, 32.6, 9 ]
+  style: https://roblabs.com/xyz-raster-sources/styles/stamen-multi-rasters.json
+  sample: https://stamen-tiles.a.ssl.fastly.net/terrain/9/89/206.jpg
+  usage: http://maps.stamen.com/#terrain/11/32.7134/-117.2059
+  tileSize: 256
+  tiles:
+    - https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg
+- name: Stamen toner
+  center: [-117.3, 32.6, 9 ]
+  style: https://roblabs.com/xyz-raster-sources/styles/stamen-multi-rasters.json
+  sample: https://stamen-tiles.a.ssl.fastly.net/toner/9/89/206.png
+  usage: http://maps.stamen.com/#toner/11/32.7134/-117.2059
+  tileSize: 256
+  tiles:
+    - https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png
+- name: ArcGIS World Imagery
+  center: [-117.3, 32.6, 9 ]
+  style: https://roblabs.com/xyz-raster-sources/styles/arcgis-world-imagery.json
+  sample: https://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/9/206/89
+  esri: https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer
+  tileSize: 256
+- name: USDA NAIP
+  minzoom: 0
+  maxzoom: 17 # Levels of Detail: 18
+  center: [-94.0, 36.0, 3]
+  style: https://roblabs.com/xyz-raster-sources/styles/usda-naip.json
+  sample: https://gis.apfo.usda.gov/arcgis/rest/services/NAIP/USDA_CONUS_PRIME/ImageServer/tile/9/206/89
+  esri: https://gis.apfo.usda.gov/arcgis/rest/services/NAIP/USDA_CONUS_PRIME/ImageServer
+  tileSize: 256

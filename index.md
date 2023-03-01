@@ -41,9 +41,9 @@ Created by [RobLabs.com](https://roblabs.com) in Summer 2020 for use in producti
 
 ---
 
-## Use in a Mapbox or MapLibre Style
+## Mapbox or MapLibre Style
 
-Tiles for use in Mapbox or MapLibre for mobile or web applications, can easily be configured.  See the [styles](styles){:target="blank"} directory for sample style JSON.
+Tiles for use in Mapbox or MapLibre for mobile or web applications, can easily be configured.  See the [styles](styles){:target="blank"} directory for sample style JSON.  These styles follow the [TileJSON `v3.0.0`](https://github.com/mapbox/tilejson-spec/tree/master/3.0.0) specification.
 
 You can also find several styles hosted by MapLibre.org.  See <https://github.com/maplibre/demotiles>.
 
@@ -106,7 +106,7 @@ tsgl -h
 
 See the details for iOS & tvOS at <https://developer.apple.com/documentation/mapkit/mktileoverlay>.
 
-```Swift
+```swift
 // coordinate the loading and management of the tiles
 // https://developer.apple.com/documentation/mapkit/mktileoverlay
 let urlTemplate = "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -133,7 +133,7 @@ See the details for MapKit JS: <https://developer.apple.com/documentation/mapkit
 
 See a live demo of MapKit JS with an OpenStreetMap tile overlay: <https://roblabs.com/projects/mapkitjs/Tile-Overlay>.
 
-```JavaScript
+```javascript
 var map = new mapkit.Map("map");
 
 // https://developer.apple.com/documentation/mapkitjs/mapkit/tileoverlay/2974035-mapkit_tileoverlay

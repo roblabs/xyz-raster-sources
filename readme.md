@@ -64,9 +64,9 @@ TEST
 
   <hr />
 
-  <h2 id="use-in-a-mapbox-or-maplibre-style">Use in a Mapbox or MapLibre Style</h2>
+  <h2 id="mapbox-or-maplibre-style">Mapbox or MapLibre Style</h2>
 
-  <p>Tiles for use in Mapbox or MapLibre for mobile or web applications, can easily be configured.  See the <a href="styles" target="blank">styles</a> directory for sample style JSON.</p>
+  <p>Tiles for use in Mapbox or MapLibre for mobile or web applications, can easily be configured.  See the <a href="styles" target="blank">styles</a> directory for sample style JSON.  These styles follow the <a href="https://github.com/mapbox/tilejson-spec/tree/master/3.0.0">TileJSON <code class="language-plaintext highlighter-rouge">v3.0.0</code></a> specification.</p>
 
   <p>You can also find several styles hosted by MapLibre.org.  See <a href="https://github.com/maplibre/demotiles">https://github.com/maplibre/demotiles</a>.</p>
 
@@ -137,25 +137,25 @@ tsgl <span class="nt">-h</span>
 
   <p>See the details for iOS &amp; tvOS at <a href="https://developer.apple.com/documentation/mapkit/mktileoverlay">https://developer.apple.com/documentation/mapkit/mktileoverlay</a>.</p>
 
-  <pre><code class="language-Swift">// coordinate the loading and management of the tiles
-// https://developer.apple.com/documentation/mapkit/mktileoverlay
-let urlTemplate = "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
-let overlay = MKTileOverlay(urlTemplate: urlTemplate)
-overlay.canReplaceMapContent = true
-overlay.minimumZ = 8
-overlay.maximumZ = 19
-overlay.tileSize = CGSize(width: 256, height: 256)
+  <div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// coordinate the loading and management of the tiles</span>
+<span class="c1">// https://developer.apple.com/documentation/mapkit/mktileoverlay</span>
+<span class="k">let</span> <span class="nv">urlTemplate</span> <span class="o">=</span> <span class="s">"https://tile.openstreetmap.org/{z}/{x}/{y}.png"</span>
+<span class="k">let</span> <span class="nv">overlay</span> <span class="o">=</span> <span class="kt">MKTileOverlay</span><span class="p">(</span><span class="nv">urlTemplate</span><span class="p">:</span> <span class="n">urlTemplate</span><span class="p">)</span>
+<span class="n">overlay</span><span class="o">.</span><span class="n">canReplaceMapContent</span> <span class="o">=</span> <span class="kc">true</span>
+<span class="n">overlay</span><span class="o">.</span><span class="n">minimumZ</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="n">overlay</span><span class="o">.</span><span class="n">maximumZ</span> <span class="o">=</span> <span class="mi">19</span>
+<span class="n">overlay</span><span class="o">.</span><span class="n">tileSize</span> <span class="o">=</span> <span class="kt">CGSize</span><span class="p">(</span><span class="nv">width</span><span class="p">:</span> <span class="mi">256</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="mi">256</span><span class="p">)</span>
 
-// handle the actual drawing of the tiles on the map
-// https://developer.apple.com/documentation/mapkit/mktileoverlayrenderer
-func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -&gt; MKOverlayRenderer {
-    if overlay is MKTileOverlay {
-        let renderer = MKTileOverlayRenderer(overlay:overlay)
-        return renderer
-    }
-    return MKTileOverlayRenderer(tileOverlay: overlay as! MKTileOverlay)
-}
-</code></pre>
+<span class="c1">// handle the actual drawing of the tiles on the map</span>
+<span class="c1">// https://developer.apple.com/documentation/mapkit/mktileoverlayrenderer</span>
+<span class="kd">func</span> <span class="nf">mapView</span><span class="p">(</span><span class="n">_</span> <span class="nv">mapView</span><span class="p">:</span> <span class="kt">MKMapView</span><span class="p">,</span> <span class="n">rendererFor</span> <span class="nv">overlay</span><span class="p">:</span> <span class="kt">MKOverlay</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">MKOverlayRenderer</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="n">overlay</span> <span class="k">is</span> <span class="kt">MKTileOverlay</span> <span class="p">{</span>
+        <span class="k">let</span> <span class="nv">renderer</span> <span class="o">=</span> <span class="kt">MKTileOverlayRenderer</span><span class="p">(</span><span class="nv">overlay</span><span class="p">:</span><span class="n">overlay</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">renderer</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="kt">MKTileOverlayRenderer</span><span class="p">(</span><span class="nv">tileOverlay</span><span class="p">:</span> <span class="n">overlay</span> <span class="k">as!</span> <span class="kt">MKTileOverlay</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>  </div>
 
   <h4 id="javascript">JavaScript</h4>
 
@@ -163,21 +163,21 @@ func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -&gt; MKOverl
 
   <p>See a live demo of MapKit JS with an OpenStreetMap tile overlay: <a href="https://roblabs.com/projects/mapkitjs/Tile-Overlay">https://roblabs.com/projects/mapkitjs/Tile-Overlay</a>.</p>
 
-  <pre><code class="language-JavaScript">var map = new mapkit.Map("map");
+  <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">map</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">mapkit</span><span class="p">.</span><span class="nb">Map</span><span class="p">(</span><span class="dl">"</span><span class="s2">map</span><span class="dl">"</span><span class="p">);</span>
 
-// https://developer.apple.com/documentation/mapkitjs/mapkit/tileoverlay/2974035-mapkit_tileoverlay
-const openstreetmap = "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
-var customOverlay = new mapkit.TileOverlay(openstreetmap);
+<span class="c1">// https://developer.apple.com/documentation/mapkitjs/mapkit/tileoverlay/2974035-mapkit_tileoverlay</span>
+<span class="kd">const</span> <span class="nx">openstreetmap</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">https://tile.openstreetmap.org/{z}/{x}/{y}.png</span><span class="dl">"</span>
+<span class="kd">var</span> <span class="nx">customOverlay</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">mapkit</span><span class="p">.</span><span class="nx">TileOverlay</span><span class="p">(</span><span class="nx">openstreetmap</span><span class="p">);</span>
 
-// https://developer.apple.com/documentation/mapkitjs/tileoverlayconstructoroptions
-customOverlay.minimumZ = 2;
-customOverlay.maximumZ = 16;
-customOverlay.opacity = 1.0;
-customOverlay.data = {
-    lang: mapkit.language
-};
-map.addTileOverlay(customOverlay);
-</code></pre>
+<span class="c1">// https://developer.apple.com/documentation/mapkitjs/tileoverlayconstructoroptions</span>
+<span class="nx">customOverlay</span><span class="p">.</span><span class="nx">minimumZ</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="nx">customOverlay</span><span class="p">.</span><span class="nx">maximumZ</span> <span class="o">=</span> <span class="mi">16</span><span class="p">;</span>
+<span class="nx">customOverlay</span><span class="p">.</span><span class="nx">opacity</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">;</span>
+<span class="nx">customOverlay</span><span class="p">.</span><span class="nx">data</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">lang</span><span class="p">:</span> <span class="nx">mapkit</span><span class="p">.</span><span class="nx">language</span>
+<span class="p">};</span>
+<span class="nx">map</span><span class="p">.</span><span class="nx">addTileOverlay</span><span class="p">(</span><span class="nx">customOverlay</span><span class="p">);</span>
+</code></pre></div>  </div>
 
   <hr />
 

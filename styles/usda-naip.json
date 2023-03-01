@@ -1,27 +1,42 @@
 {
   "version": 8,
+  "metadata": "Made with liquid💦: RobLabs.com/xyz",
   "name": "USDA NAIP",
-  "pitch": 0,
   "bearing": 0,
-  "zoom": 7,
-  "center": [-117.3, 32.6],
+  "pitch": 0,
+  "zoom": 3,
+  "center": [-94.0, 36.0, 3],
   "sources": {
-    "usda-naip": {
+    "imagery": {
+      "tilejson": "3.0.0",
+      "version": "1.0.0",
+      "name": "USDA NAIP",
+      "description": "",
+      "attribution": "",
+      "bounds": [-180, -85.051129, 180, 85.051129],
+      "center": [-94.0, 36.0, 3],
+      "minzoom": 0,
+      "maxzoom": 17,
+      "scheme": "xyz",
+      "volatile": false,
       "type": "raster",
+      "tileSize": 256,
       "tiles": [
         "https://gis.apfo.usda.gov/arcgis/rest/services/NAIP/USDA_CONUS_PRIME/ImageServer/tile/{z}/{y}/{x}"
       ]
     }
   },
-  "id": "0x_usda-naip",
+  "id": "USDA NAIP",
   "layers": [
     {
-      "id": "layerId_USDA NAIP",
+      "metadata": "",
+      "id": "USDA NAIP",
+      "source": "imagery",
+      "minzoom": 0,
+      "maxzoom": 17,
       "type": "raster",
-      "source": "usda-naip",
-      "layout": {
-        "visibility": "visible"
-      }
+      "raster-opacity": 1,
+      "layout": { "visibility": "visible" }
     }
   ]
 }
