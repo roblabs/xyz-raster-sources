@@ -1,2 +1,13 @@
 ssl/
 .jekyll-metadata
+styles/mapbox*
+styles/SD*
+
+# Generated from `swift package resolve`
+.build/
+
+# Generated when opened in Xcode
+.swiftpm/
+
+# Generated from `xcrun docc preview Documentation.docc`
+.docc-build/
