@@ -47,12 +47,12 @@
   "pitch": 0.04319296084829255,
   "sources": {
     "composite": {
-      "url": "mapbox://atlas-user.park-tiles-4-hydro,mapbox.mapbox-streets-v7,atlas-user.park-tiles-4-label-point,atlas-user.park-tiles-4-data,atlas-user.park-tiles-4-boundary,mapbox.mapbox-terrain-v2",
+      "url": "https://atlas-stg.geoplatform.gov/v4/atlas-user.park-tiles-4-hydro,mapbox.mapbox-streets-v7,atlas-user.park-tiles-4-label-point,atlas-user.park-tiles-4-data,atlas-user.park-tiles-4-boundary,mapbox.mapbox-terrain-v2.json?secure&access_token=pk.eyJ1IjoiYXRsYXMtdXNlciIsImEiOiJjazFmdGx2bjQwMDAwMG5wZmYwbmJwbmE2In0.lWXK2UexpXuyVitesLdwUg",
       "type": "vector"
     }
   },
-  "sprite": "mapbox://sprites/atlas-user/ck58pyquo009v01p99xebegr9/b4od2f3vwinl3bhrvi7y24hu6",
-  "glyphs": "mapbox://fonts/atlas-user/{fontstack}/{range}.pbf",
+  "sprite": "https://atlas-stg.geoplatform.gov/v4/sprites/atlas-user/ck58pyquo009v01p99xebegr9/b4od2f3vwinl3bhrvi7y24hu6/sprite?access_token=pk.eyJ1IjoiYXRsYXMtdXNlciIsImEiOiJjazFmdGx2bjQwMDAwMG5wZmYwbmJwbmE2In0.lWXK2UexpXuyVitesLdwUg",
+  "glyphs": "https://atlas-stg.geoplatform.gov/v4/fonts/atlas-user/{fontstack}/{range}.pbf?access_token=pk.eyJ1IjoiYXRsYXMtdXNlciIsImEiOiJjazFmdGx2bjQwMDAwMG5wZmYwbmJwbmE2In0.lWXK2UexpXuyVitesLdwUg",
   "layers": [
     { "id": "background", "type": "background", "paint": { "background-color": "#f7eee8" }, "layout": {} },
     {
