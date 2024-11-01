@@ -51,8 +51,8 @@
       "type": "vector"
     }
   },
-  "sprite": "https://atlas-stg.geoplatform.gov/v4/sprites/atlas-user/ck58pyquo009v01p99xebegr9/b4od2f3vwinl3bhrvi7y24hu6/sprite?access_token=pk.eyJ1IjoiYXRsYXMtdXNlciIsImEiOiJjazFmdGx2bjQwMDAwMG5wZmYwbmJwbmE2In0.lWXK2UexpXuyVitesLdwUg",
-  "glyphs": "https://atlas-stg.geoplatform.gov/v4/fonts/atlas-user/{fontstack}/{range}.pbf?access_token=pk.eyJ1IjoiYXRsYXMtdXNlciIsImEiOiJjazFmdGx2bjQwMDAwMG5wZmYwbmJwbmE2In0.lWXK2UexpXuyVitesLdwUg",
+  "sprite": "https://atlas-stg.geoplatform.gov/styles/v1/atlas-user/ck58pyquo009v01p99xebegr9/b4od2f3vwinl3bhrvi7y24hu6/sprite?access_token=pk.eyJ1IjoiYXRsYXMtdXNlciIsImEiOiJjazFmdGx2bjQwMDAwMG5wZmYwbmJwbmE2In0.lWXK2UexpXuyVitesLdwUg",
+  "glyphs": "https://atlas-stg.geoplatform.gov/fonts/v1/atlas-user/{fontstack}/{range}.pbf?access_token=pk.eyJ1IjoiYXRsYXMtdXNlciIsImEiOiJjazFmdGx2bjQwMDAwMG5wZmYwbmJwbmE2In0.lWXK2UexpXuyVitesLdwUg",
   "layers": [
     { "id": "background", "type": "background", "paint": { "background-color": "#f7eee8" }, "layout": {} },
     {
