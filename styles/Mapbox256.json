@@ -1,0 +1,40 @@
+{
+  "version": 8,
+  "metadata": "Made with liquid💦: RobLabs.com/xyz",
+  "name": "Mapbox256",
+  "bearing": 0,
+  "pitch": 0,
+  "zoom": 0,
+  "center": [0, 0],
+  "sources": {
+    "imagery": {
+      "tilejson": "3.0.0",
+      "version": "1.0.0",
+      "name": "Mapbox256",
+      "description": "[Mapbox Styles Gallery](https://www.mapbox.com/gallery)",
+      "attribution": "",
+      "bounds": [-180, -85.051129, 180, 85.051129],
+      "center": [0, 0],
+      "minzoom": 0,
+      "maxzoom": 24,
+      "scheme": "xyz",
+      "volatile": false,
+      "type": "raster",
+      "tileSize": 512,
+      "tiles": ["https://api.mapbox.com/styles/v1/mapbox/satellite-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoicm9ibGFicyIsImEiOiJjbTkxeTBoaHQwNjVuMmpuN2M3dWo2YWZ1In0.JSMbPjLdomopI-hAsTN5zA"]
+    }
+  },
+  "id": "Mapbox256",
+  "layers": [
+    {
+      "metadata": "",
+      "id": "Mapbox256",
+      "source": "imagery",
+      "minzoom": 0,
+      "maxzoom": 24,
+      "type": "raster",
+      "raster-opacity": 1,
+      "layout": { "visibility": "visible" }
+    }
+  ]
+}
