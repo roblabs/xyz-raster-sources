@@ -11,8 +11,8 @@
       "tilejson": "3.0.0",
       "version": "1.0.0",
       "name": "ArcGIS World Imagery",
-      "description": "",
-      "attribution": "",
+      "description": "World Imagery provides one meter or better satellite and aerial imagery in many parts of the world and lower resolution satellite imagery worldwide.",
+      "attribution": "<a target='_blank' href='https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer'>Esri</a>, Maxar, Earthstar Geographics, and the GIS User Community",
       "bounds": [-180, -85.051129, 180, 85.051129],
       "center": [-117.3, 32.6, 9],
       "minzoom": 0,
@@ -21,9 +21,7 @@
       "volatile": false,
       "type": "raster",
       "tileSize": 256,
-      "tiles": [
-        "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
-      ]
+      "tiles": ["https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"]
     }
   },
   "id": "ArcGIS World Imagery",

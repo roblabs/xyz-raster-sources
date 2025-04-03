@@ -11,8 +11,8 @@
       "tilejson": "3.0.0",
       "version": "1.0.0",
       "name": "Natural Earth Tiles",
-      "description": "",
-      "attribution": "",
+      "description": "Tiles derived from the public Natural Earth data.",
+      "attribution": "<a target='_blank' href='https://github.com/lukasmartinelli/naturalearthtiles'>Natural Earth Raster Tiles</a>",
       "bounds": [-180, -85.051129, 180, 85.051129],
       "center": [-117.3, 32.6, 2],
       "minzoom": 0,
@@ -21,9 +21,7 @@
       "volatile": false,
       "type": "raster",
       "tileSize": 256,
-      "tiles": [
-        "https://naturalearthtiles.roblabs.com/tiles/natural_earth_cross_blended_hypso_shaded_relief.raster/{z}/{x}/{y}.png"
-      ]
+      "tiles": ["https://naturalearthtiles.roblabs.com/tiles/natural_earth_cross_blended_hypso_shaded_relief.raster/{z}/{x}/{y}.png"]
     }
   },
   "id": "Natural Earth Tiles",

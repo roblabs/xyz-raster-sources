@@ -11,8 +11,8 @@
       "tilejson": "3.0.0",
       "version": "1.0.0",
       "name": "USDA NAIP",
-      "description": "",
-      "attribution": "",
+      "description": "https://gis.apfo.usda.gov/arcgis/rest/services/NAIP/USDA_CONUS_PRIME/ImageServer",
+      "attribution": "<a target='_blank' href='https://naip-usdaonline.hub.arcgis.com'>USDA National Agriculture Imagery Program (NAIP)</a>",
       "bounds": [-180, -85.051129, 180, 85.051129],
       "center": [-94.0, 36.0, 3],
       "minzoom": 0,
@@ -21,9 +21,7 @@
       "volatile": false,
       "type": "raster",
       "tileSize": 256,
-      "tiles": [
-        "https://gis.apfo.usda.gov/arcgis/rest/services/NAIP/USDA_CONUS_PRIME/ImageServer/tile/{z}/{y}/{x}"
-      ]
+      "tiles": ["https://gis.apfo.usda.gov/arcgis/rest/services/NAIP/USDA_CONUS_PRIME/ImageServer/tile/{z}/{y}/{x}"]
     }
   },
   "id": "USDA NAIP",
